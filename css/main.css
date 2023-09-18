@@ -205,7 +205,7 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   width: 486px;
   height: 41px;
   -webkit-box-pack: justify;
@@ -214,7 +214,31 @@ nav {
 }
 
 .hero__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 142px;
+  height: 41px;
+}
+
+.hero__icon {
+  width: 41px;
+  height: 41px;
+  overflow: hidden;
+}
+
+.hero__icon-description {
+  width: 90px;
+  height: 36px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
 }
 
 .why {
@@ -269,6 +293,7 @@ nav {
 }
 
 .benefits__item {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,6 +306,17 @@ nav {
           justify-content: space-between;
   width: 279px;
   height: 267px;
+}
+.benefits__item:before {
+  content: url("./../../../images/why/points.svg");
+  position: absolute;
+  width: 67px;
+  height: 21px;
+  top: 56px;
+  right: -60px;
+}
+.benefits__item:last-child::before {
+  display: none;
 }
 
 .benefits__image {

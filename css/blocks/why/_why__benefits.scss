@@ -9,11 +9,27 @@
 }
 
 .benefits__item {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 279px;
     height: 267px;
+
+    &:before {
+        content: url('./../../../images/why/points.svg');
+        position: absolute;
+        width: 67px;
+        height: 21px;
+        top: 56px;
+        right: -60px;
+    }
+
+    &:last-child {
+        &::before {
+            display: none;
+        }
+    }
 }
 
 .benefits__image {
