@@ -1,0 +1,45 @@
+body {
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Alegreya Sans';
+    font-weight: 400;
+}
+
+section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrapper {
+    position: relative;
+    min-width: $containerWidth;// + 20px;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Alegreya Sans';
+    font-weight: 700;
+    color: #fff;
+}
+
+.container {
+    @include flexColAround;
+    width: $containerWidth;
+    height: 100%;
+    margin: 0 auto;
+    color: #666;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h3 {
+    margin: 0;
+}

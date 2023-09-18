@@ -1,0 +1,55 @@
+.hero__header {
+    padding-top: 6px;
+    margin-bottom: 34px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.header__container {
+    display: flex;
+    width: 940px;
+    height: 39.26px;
+}
+
+.header__logo {
+    width: 55.56px;
+    height: 39.26px;
+}
+
+.header__nav-breadcrumb {
+    display: flex;
+    margin-left: 46px;
+    justify-content: space-between;
+    width: 638px;
+    height: 39.26px;
+
+    li {
+        list-style-type: none;
+    }
+}
+
+.header__address {
+    display: flex;
+    margin-left: 45px;
+    justify-content: space-between;
+    width: 153px;
+    line-height: 39.26px;
+}
+
+.address__logo__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.address__logo {
+    width: 12.9px;
+    height: 13.78px;
+    line-height: 39.26px;
+}
+
+.phone-number {
+    width: 134.57px;
+    font-size: 22px;
+    font-weight: bold;
+}

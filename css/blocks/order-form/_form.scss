@@ -1,0 +1,14 @@
+.form {
+    display: flex;
+    margin: 0 auto;
+    width: 964px;
+    height: 408px;
+}
+
+.form__column {
+    flex: 1;
+    &:last-child {
+        margin-right: 2px;
+        margin-left: 14px;
+    }
+}

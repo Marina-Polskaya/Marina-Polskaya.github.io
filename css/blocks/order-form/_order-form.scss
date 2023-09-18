@@ -1,0 +1,8 @@
+.order-form {
+    @include flexColBetween;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(43, 43, 43, 0.6)), url('./../../../images/order-form/cd318b28c9ca7b595ef1ba2ba8ffdac9.png') 50% / cover no-repeat;
+    background-size: cover;
+    padding: $topBotPaddingSection 0;
+}

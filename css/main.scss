@@ -1,0 +1,59 @@
+$containerWidth: 1100px;
+$mainMargin: 80px;
+$topBotPaddingSection: 62px;
+$titlesFontsColor: #292929;
+$descTextColor: #666666;
+$grayBg: #F8FAF9;
+$yellow: #FEDB3F;
+
+// Это сделано временно для совпадания с макетом в Pixel Perfect, тк в макете высота одной секции меньше на 10px
+.boards-slider {
+    width: 100vw;
+    min-height: 642px;
+}
+
+@mixin flexColAround {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@mixin flexColBetween {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;200;300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+@import './blocks/_layout.scss';
+@import './blocks/_title.scss';
+@import './blocks/hero/_hero.scss';
+@import './blocks/hero/_nav.scss';
+@import './blocks/hero/_hero__header.scss';
+@import './blocks/hero/_hero__title.scss';
+@import './blocks/_button.scss';
+@import './blocks/hero/_hero__icons-container.scss';
+@import './blocks/why/_why.scss';
+@import './blocks/why/_why__title-container.scss';
+@import './blocks/why/_why__benefits.scss';
+@import './blocks/reviews/_reviews.scss';
+@import './blocks/reviews/_reviews__title.scss';
+@import './blocks/reviews/_reviews__content.scss';
+@import './blocks/reviews/_reviews__content__top.scss';
+@import './blocks/reviews/_reviews__content__bottom.scss';
+@import './blocks/reviews/_interractive-avatar.scss';
+@import './blocks/order-form/_order-form.scss';
+@import './blocks/order-form/_order-form__title.scss';
+@import './blocks/order-form/_form.scss';
+@import './blocks/order-form/_form__cell.scss';
+@import './blocks/order-form/_form__input.scss';
+@import './blocks/order-form/_form__label.scss';
+@import './blocks/order-form/_form__row.scss';
+@import './blocks/order-form/_form__textarea.scss';
+@import './blocks/order-form/_form__payment-box.scss';
+@import './blocks/order-form/_order__radio.scss';
+@import './blocks/order-form/_form__button-container.scss';
+
+@import './blocks/_section.scss';
+@import './blocks/fixed-menu/_fixed-menu.scss';

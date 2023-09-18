@@ -1,0 +1,30 @@
+.form__cell {
+    @include flexColBetween;
+    flex: 1;
+    margin-left: 13px;
+    margin-bottom: 13px;
+    min-height: 80px;
+    font-weight: 400;
+}
+
+.form__cell-payment {
+    display: flex;
+    justify-content: space-between;
+    width: 176px;
+    text-align: right;
+
+    &:first-child {
+        margin-right: 12px;
+    }
+
+    &:last-child {
+        width: 140px;
+    }
+}
+
+.form__cell-payment-check {
+    margin-top: 5px;
+    width: 166px;
+    line-height: 30px;
+    align-items: center;
+}

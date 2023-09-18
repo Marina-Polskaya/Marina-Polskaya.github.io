@@ -1,0 +1,44 @@
+.order__radio {
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.order__radio-hide {
+    display: none;
+}
+
+.order__radio-visible {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #fff;
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        background: $yellow;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.order__check-visible {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border-radius: 15%;
+    background: #fff;
+}
+
+.order__chech-img {
+    position: absolute;
+    width:  10px;
+    height: 8px;
+    top: 8px;
+    left: 8px;
+}
