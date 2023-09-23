@@ -1,0 +1,12 @@
+.form__column {
+    flex: 1;
+    margin-right: 14px;
+    
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.form__column-add-info {
+    padding-left: 10px;
+}

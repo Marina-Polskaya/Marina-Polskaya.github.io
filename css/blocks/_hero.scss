@@ -1,0 +1,16 @@
+.hero {
+    padding-top: 2.1%;
+    padding-bottom: 6%;
+    height: 100vh;
+    min-height: 652px;
+    background: url('./../../images/hero/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    color: #fff;
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

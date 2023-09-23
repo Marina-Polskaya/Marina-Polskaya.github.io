@@ -1,17 +1,16 @@
-section {
-    width: 100vw;
-    height: 100vh;
-    min-height: 652px;
+.section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 5.7%;
+    padding-bottom: 5.7%;
+    height: 100vh;
+    min-height: 652px;
 }
 
-h2 {
-    width: 470px;
-    height: 48px;
-    color: #292929;
+.section__title {
+    margin-bottom: 31px;
     font-size: 48px;
-    font-weight: 700;
-    line-height: 58px;
+    font-weight: bold;
+    text-align: center;
 }

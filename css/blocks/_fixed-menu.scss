@@ -1,0 +1,46 @@
+.fixed-menu {
+    position: fixed;
+    top: 32.7%;
+    right: 4.2%;
+}
+
+.fixed-menu__list {
+    li {
+        list-style-type: none;
+    }
+}
+
+.fixed-menu__point {
+    margin-bottom: 5px;
+
+    &--active {
+        .fixed-menu__link {
+            border-color: #fff;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.fixed-menu__link {
+    position: relative;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+
+    &:before {
+        position: absolute;
+        display: block;
+        top: 28%;
+        left: 28%;
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #fff;
+    }
+}

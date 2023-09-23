@@ -1,0 +1,21 @@
+.menu {
+    margin-left: 46px;
+    margin-right: 47px;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+}
+
+.menu__item {
+    margin-right: 22px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.menu__link {
+    text-decoration: none;
+}
