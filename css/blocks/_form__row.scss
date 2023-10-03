@@ -15,10 +15,10 @@
     }
 
     @include phones {
-        margin-bottom: rem(32px);
+        margin-bottom: rem(21px);
 
         &:last-child {
-            margin-bottom: rem(36px);
+            margin-bottom: rem(26px);
         }
     }
 }

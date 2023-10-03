@@ -20,4 +20,8 @@
     @include tablets {
         margin-bottom: rem(38px);
     }
+
+    @include phones {
+        margin-bottom: rem(28px);
+    }
 }

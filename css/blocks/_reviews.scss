@@ -7,6 +7,11 @@
         padding: rem(62px) rem(24px) rem(46px) rem(24px);   
         margin-bottom: rem(38px);     
     }
+
+    @include phones {
+        padding: rem(30px) rem(24px) rem(22px) rem(24px);   
+        margin-bottom: rem(18px);     
+    }
 }
 
 .reviews__display-inner {
@@ -28,6 +33,11 @@
         width: rem(136px);
         height: rem(138px);
     }
+
+    @include phones {
+        width: rem(120px);
+        height: rem(125px);
+    }
 }
 
 .reviews__avatar-img {
@@ -45,6 +55,10 @@
         margin-left: 0;
         padding: rem(34px) 0 0 0;
     }
+
+    @include phones {
+        padding: rem(22px) 0 0 0;
+    }
 }
 
 .reviews__title {
@@ -55,6 +69,10 @@
     @include tablets {
         margin-bottom: rem(16px);
     }
+
+    @include phones {
+        font-size: rem(23px);
+    }
 }
 
 .reviews__text {
@@ -62,8 +80,13 @@
     line-height: rem(21.6px);
     color: $descTextColor;
 
-    @include tablets {
-        margin-bottom: rem(28px);
+    // @include tablets {
+    //     margin-bottom: rem(28px);
+    // }
+
+    @include phones {
+        font-size: rem(17px);
+        margin-bottom: rem(12px);
     }
 }
 

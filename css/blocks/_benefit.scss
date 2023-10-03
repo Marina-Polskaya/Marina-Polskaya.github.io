@@ -30,7 +30,10 @@
     transform: translate(-50%, -50%);
 
     @include phones {
+        width: rem(60px);
+        height: rem(60px);
     }
+
 }
 
 .benefit__icon-mini {
@@ -61,10 +64,15 @@
     @include phones {
         margin-top: 0;
         margin-bottom: rem(10px);
+        font-size: rem(25px);
     }
 }
 
 .benefit__description {
     font-weight: 300;
     color: $descTextColor;
+
+    @include phones {
+        font-size: rem(17px);
+    }
 }

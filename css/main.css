@@ -15,7 +15,7 @@ html {
 }
 @media screen and (max-width: 480px) {
   html {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
@@ -453,7 +453,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .headline {
-    margin-bottom: 10%;
+    margin-bottom: 12%;
   }
 }
 
@@ -467,7 +467,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .headline__title {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3888888889rem;
   }
 }
 
@@ -538,7 +538,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .benefits__item {
-    margin-bottom: 1.7222222222rem;
+    margin-bottom: 3%;
     margin-left: 0;
     margin-right: 0;
   }
@@ -584,6 +584,13 @@ img {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+@media screen and (max-width: 480px) {
+  .benefit__icon {
+    width: 3.3333333333rem;
+    height: 3.3333333333rem;
+  }
+}
+
 .benefit__icon-mini {
   margin: 0 auto;
   width: 2.4348888889rem;
@@ -614,6 +621,7 @@ img {
   .benefit__title {
     margin-top: 0;
     margin-bottom: 0.5555555556rem;
+    font-size: 1.3888888889rem;
   }
 }
 
@@ -621,11 +629,14 @@ img {
   font-weight: 300;
   color: #666666;
 }
-
 @media screen and (max-width: 480px) {
-  .why {
-    padding-top: 1.8%;
+  .benefit__description {
+    font-size: 0.9444444444rem;
   }
+}
+
+.why {
+  border: 1px solid red;
 }
 
 .why__container {
@@ -660,6 +671,11 @@ img {
     padding-bottom: 25%;
   }
 }
+@media screen and (max-width: 480px) {
+  .review {
+    padding: 0;
+  }
+}
 
 .review__container {
   display: -webkit-box;
@@ -675,6 +691,12 @@ img {
   padding-top: 3.4%;
 }
 
+@media screen and (max-width: 480px) {
+  .review__title {
+    margin-bottom: 8px;
+  }
+}
+
 .reviews__display {
   padding: 2.3333333333rem;
   margin-bottom: 0.8333333333rem;
@@ -684,6 +706,12 @@ img {
   .reviews__display {
     padding: 3.4444444444rem 1.3333333333rem 2.5555555556rem 1.3333333333rem;
     margin-bottom: 2.1111111111rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reviews__display {
+    padding: 1.6666666667rem 1.3333333333rem 1.2222222222rem 1.3333333333rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -715,6 +743,12 @@ img {
     height: 7.6666666667rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .reviews__avatar {
+    width: 6.6666666667rem;
+    height: 6.9444444444rem;
+  }
+}
 
 .reviews__avatar-img {
   -o-object-fit: cover;
@@ -736,6 +770,11 @@ img {
     padding: 1.8888888889rem 0 0 0;
   }
 }
+@media screen and (max-width: 480px) {
+  .reviews__content {
+    padding: 1.2222222222rem 0 0 0;
+  }
+}
 
 .reviews__title {
   font-size: 1.5rem;
@@ -747,15 +786,21 @@ img {
     margin-bottom: 0.8888888889rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .reviews__title {
+    font-size: 1.2777777778rem;
+  }
+}
 
 .reviews__text {
   margin-bottom: 1.5555555556rem;
   line-height: 1.2rem;
   color: #666666;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .reviews__text {
-    margin-bottom: 1.5555555556rem;
+    font-size: 0.9444444444rem;
+    margin-bottom: 0.6666666667rem;
   }
 }
 
@@ -836,6 +881,11 @@ img {
 @media screen and (max-width: 768px) {
   .order-form__title {
     margin-bottom: 2.1111111111rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .order-form__title {
+    margin-bottom: 1.5555555556rem;
   }
 }
 
@@ -933,10 +983,10 @@ img {
 }
 @media screen and (max-width: 480px) {
   .form__row {
-    margin-bottom: 1.7777777778rem;
+    margin-bottom: 1.1666666667rem;
   }
   .form__row:last-child {
-    margin-bottom: 2rem;
+    margin-bottom: 1.4444444444rem;
   }
 }
 
@@ -966,8 +1016,8 @@ img {
 }
 @media screen and (max-width: 480px) {
   .payment-box {
-    margin-top: 1.1111111111rem;
-    margin-bottom: 3.1111111111rem;
+    margin-top: 1rem;
+    margin-bottom: 6%;
   }
 }
 
@@ -993,7 +1043,7 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 1.6666666667rem;
+    margin-bottom: 1.1111111111rem;
   }
   .payment-box__row:last-child {
     margin-bottom: 0;
