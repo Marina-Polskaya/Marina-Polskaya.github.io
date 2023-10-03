@@ -1,0 +1,30 @@
+.burger {
+    display: none;
+    position: fixed;
+    top: 3.4%;
+    right: 2.9%;
+    width: rem(26px);
+    height: rem(24px);
+    cursor: pointer;
+
+    @include tablets {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;        
+    }
+
+    @include phones {
+        top: 4%;
+        right: 2%;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+} 
+
+.burger__line {
+    width: 100%;
+    height: rem(4px);
+    background-color: #fff;
+    border-radius: rem(2px);
+}

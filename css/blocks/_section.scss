@@ -5,12 +5,20 @@
     padding-top: 5.7%;
     padding-bottom: 5.7%;
     height: 100vh;
-    min-height: 652px;
+    min-height: rem(652px);
 }
 
 .section__title {
-    margin-bottom: 31px;
-    font-size: 48px;
+    margin-bottom: rem(31px);
+    font-size: rem(48px);
     font-weight: bold;
     text-align: center;
+
+    @include tablets {
+        margin-bottom: rem(36px);
+    }
+
+    @include phones {
+        font-size: rem(36px);
+    }
 }

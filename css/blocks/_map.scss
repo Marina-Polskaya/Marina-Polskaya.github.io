@@ -1,0 +1,11 @@
+.map {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.map__img {
+    min-height: 100vh;
+    background: url('./../../images/contacts/map1100.png') 70% 0 no-repeat;
+    background-size: cover; 
+}

@@ -1,16 +1,41 @@
 .hero {
     padding-top: 2.1%;
-    padding-bottom: 6%;
+    padding-bottom: 5.4%;
     height: 100vh;
-    min-height: 652px;
+    min-height: rem(652px);
     background: url('./../../images/hero/bg.png');
     background-repeat: no-repeat;
     background-size: cover; 
     color: #fff;
+
+    @include tablets {
+        padding: 0;
+        background: linear-gradient(rgba(25, 104, 177, 0.2)), url('./../../images/hero/bg768.png') 50% rem(96px)/ cover no-repeat;
+        filter:contrast(120%);
+    }
+
+    @include phones {
+        padding: 0;
+        background: linear-gradient(rgba(25, 104, 177, 0.2)), url('./../../images/hero/bg480.png') 50% rem(64px)/ cover no-repeat;
+        filter:contrast(120%);
+    }
+
 }
 
 .hero__container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include tablets {
+        margin: 0;
+        width: 100%;
+    }
+
+    @include phones {
+        margin: 0;
+        width: 100%;
+    }
+
+
 }

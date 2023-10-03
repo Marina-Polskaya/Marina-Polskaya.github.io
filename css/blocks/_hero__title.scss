@@ -1,19 +1,62 @@
 .hero__title-section {
-    width: 53%;
+    width: 50%;
     margin-top: 7%;
-    margin-bottom: 18px;
+    margin-bottom: rem(26px);
+
+    @include tablets {
+        padding: 0 5% 0 5%;
+        margin-top: 12.4%;
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    @include phones {
+        padding: 0 6% 0 6%;
+        margin-top: 7%;
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 .hero__main-title {
-    margin-bottom: 18px;
-    font-size: 48px;
-    line-height: 58px;
+    margin-bottom: rem(18px);
+    font-size: rem(48px);
+    line-height: rem(58px);
     font-weight: bold;
     text-transform: uppercase;
+
+    @include tablets {
+        margin-bottom: (9px);
+    }
+
+    @include phones {
+        margin-bottom: rem(16px);
+        font-size: rem(36px);
+        line-height: rem(36px);
+    }
 }
 
 .hero__title-description {
-    margin-bottom: 39px;
+    margin-bottom: rem(39px);
     font-weight: 400;
-    font-size: 21px;
+    font-size: rem(21px);
+
+    @include tablets {
+        margin-bottom: rem(44px);
+    }
+
+    @include phones {
+        font-size: rem(18px);
+        margin-bottom: rem(52px);
+    }
 }

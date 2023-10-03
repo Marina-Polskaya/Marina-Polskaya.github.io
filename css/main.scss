@@ -1,18 +1,29 @@
 $containerWidth: 940px;
-$topBotPaddingSection: 62px;
+$baseFontSize: 18px;
+
+//breakpoints
+
+$tablets: 768px;
+$phones: 480px;
+
+//colors
+
 $titlesFontsColor: #292929;
 $descTextColor: #666666;
 $grayBg: #F8FAF9;
 $yellow: #FEDB3F;
 
-// Это сделано временно для совпадания с макетом в Pixel Perfect, тк в макете высота одной секции меньше на 10px
-// .boards-slider {
-//     width: 100vw;
-//     min-height: 642px;
-// }
+// Это сделано временно для совпадания с макетом в Pixel Perfect, тк в макете высота одной секции меньше на rem(10px)
+.boards-slider {
+    width: 100vw;
+    min-height: 642px;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;200;300;400;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+
+@import './media.scss';
+
 @import './blocks/_layout.scss';
 @import './blocks/_hero.scss';
 @import './blocks/_header.scss';
@@ -27,6 +38,7 @@ $yellow: #FEDB3F;
 @import './blocks/_benefits.scss';
 @import './blocks/_benefit.scss';
 @import './blocks/_why.scss';
+@import './blocks/_review.scss';
 @import './blocks/_reviews.scss';
 @import './blocks/_interractive-avatar.scss';
 @import './blocks/_order-form.scss';
@@ -38,4 +50,9 @@ $yellow: #FEDB3F;
 @import './blocks/_form__textarea.scss';
 @import './blocks/_payment-box.scss';
 @import './blocks/_form__button-container.scss';
+@import './blocks/_contacts.scss';
+@import './blocks/_map.scss';
+@import './blocks/_footer.scss';
+@import './blocks/_social-media.scss';
+@import './blocks/_burger.scss';
 @import './blocks/_fixed-menu.scss';

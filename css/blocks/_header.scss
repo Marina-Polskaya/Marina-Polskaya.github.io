@@ -1,5 +1,15 @@
 .header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     font-weight: 600;
+
+    @include tablets {
+        padding: rem(29px) rem(33px);
+        background: #1968B1;
+    }
+
+    @include phones {
+        padding: rem(34px) rem(10px);
+        background: #1968B1;
+    }
 }

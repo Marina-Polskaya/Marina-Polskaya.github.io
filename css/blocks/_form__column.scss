@@ -1,12 +1,20 @@
 .form__column {
     flex: 1;
-    margin-right: 14px;
+    margin-right: rem(14px);
     
     &:last-child {
+        margin-right: 0;
+    }
+
+    @include tablets {
         margin-right: 0;
     }
 }
 
 .form__column-add-info {
-    padding-left: 10px;
+    padding-left: rem(10px);
+
+    @include tablets {
+        padding-left: 0;
+    }
 }

@@ -1,3 +1,20 @@
 .why {
-    padding-top: 9.5%;
+    @include phones {
+        padding-top: 1.8%;
+    }
+}
+
+.why__container {
+    padding-top: 3.9%;
+
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 0;
+    }
+
+    @include phones {
+        padding-top: 0;
+    }
 }

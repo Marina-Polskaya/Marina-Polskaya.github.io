@@ -1,16 +1,40 @@
 .headline {
-    margin-bottom: 49px;
+    margin-bottom: rem(44px);
     text-align: center;
+
+    @include tablets {
+        margin-bottom: rem(53px);
+    }
+
+    @include phones {
+        margin-bottom: 10%;
+    }
+
 }
 
 .headline__title {
-    margin-bottom: 17px;
+    margin-bottom: rem(17px);
+
+    @include tablets {
+        margin-bottom: rem(22px);
+    }
+
+    @include phones {
+        margin-bottom: rem(9px);
+    }
 }
 
 .headline__subtitle {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     width: 46%;
-    line-height: 22px;
+    line-height: rem(25px);
     color: $descTextColor;
+
+    @include tablets {
+        width: 60%;
+    }
+
+    @include phones {
+        width: 97%;
+    }
 }

@@ -1,12 +1,16 @@
 .benefits {
     display: flex;
+
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .benefits__item {
 
     position: relative;
     flex: 1;
-    margin: 0 26px;
+    margin: 0 rem(26px);
 
     &:first-child {
         margin-left: 0;
@@ -23,9 +27,28 @@
     &:before {
         content: url('./../../../images/why/points.svg');
         position: absolute;
-        width: 67px;
-        height: 21px;
-        top: 56px;
-        right: -60px;
+        width: rem(67px);
+        height: rem(21px);
+        top: rem(56px);
+        right: rem(-60px);
+
+        @include tablets {
+            display: none;
+        }
+
+        @include phones {
+            display: none;
+        }
+
+    }
+
+    @include phones {
+        margin-bottom: rem(31px);
+        margin-left: 0;
+        margin-right: 0;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }

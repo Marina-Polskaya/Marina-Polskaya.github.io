@@ -1,16 +1,33 @@
 .reviews__display {
-    padding: 42px;
-    margin-bottom: 15px;
+    padding: rem(42px);
+    margin-bottom: rem(15px);
     background-color: $grayBg;
+
+    @include tablets {
+        padding: rem(62px) rem(24px) rem(46px) rem(24px);   
+        margin-bottom: rem(38px);     
+    }
 }
 
 .reviews__display-inner {
     display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+    }
 }
 
 .reviews__avatar {
-    width: 253px;
-    height: 264px;
+    width: rem(253px);
+    height: rem(264px);
+
+    @include tablets {
+        width: rem(136px);
+        height: rem(138px);
+    }
 }
 
 .reviews__avatar-img {
@@ -21,20 +38,33 @@
 
 .reviews__content {
     flex: 1;
-    margin-left: 38px;
-    padding: 32px 100px 0 0;
+    margin-left: rem(38px);
+    padding: rem(32px) rem(100px) 0 0;
+
+    @include tablets {
+        margin-left: 0;
+        padding: rem(34px) 0 0 0;
+    }
 }
 
 .reviews__title {
-    font-size: 27px;
+    font-size: rem(27px);
     font-weight: 700;
-    margin-bottom: 14px;
+    margin-bottom: rem(14px);
+
+    @include tablets {
+        margin-bottom: rem(16px);
+    }
 }
 
 .reviews__text {
-    margin-bottom: 28px;
-    line-height: 21.6px;
+    margin-bottom: rem(28px);
+    line-height: rem(21.6px);
     color: $descTextColor;
+
+    @include tablets {
+        margin-bottom: rem(28px);
+    }
 }
 
 .reviews__author {
@@ -47,5 +77,5 @@
 }
 
 .reviews__switcher-item {
-    margin: 0 3px;
+    margin: 0 rem(3px);
 }

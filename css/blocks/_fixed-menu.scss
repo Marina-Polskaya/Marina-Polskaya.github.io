@@ -2,6 +2,14 @@
     position: fixed;
     top: 32.7%;
     right: 4.2%;
+
+    @include tablets {
+        display: none;
+    }
+
+    @include phones {
+        display: none;
+    }
 }
 
 .fixed-menu__list {
@@ -11,7 +19,7 @@
 }
 
 .fixed-menu__point {
-    margin-bottom: 5px;
+    margin-bottom: rem(5px);
 
     &--active {
         .fixed-menu__link {
@@ -27,10 +35,10 @@
 .fixed-menu__link {
     position: relative;
     display: block;
-    width: 16px;
-    height: 16px;
+    width: rem(16px);
+    height: rem(16px);
     border-radius: 50%;
-    border: 1px solid transparent;
+    border: rem(1px) solid transparent;
 
     &:before {
         position: absolute;
@@ -38,8 +46,8 @@
         top: 28%;
         left: 28%;
         content: "";
-        width: 6px;
-        height: 6px;
+        width: rem(6px);
+        height: rem(6px);
         border-radius: 50%;
         background: #fff;
     }

@@ -1,0 +1,21 @@
+.social-media {
+    display: flex;
+    align-items: center;
+}
+
+.social-media__item {
+    width: rem(20px);
+    height: rem(20px);
+    margin-right: rem(14px);
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @include phones {
+        margin-right: rem(26px);
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

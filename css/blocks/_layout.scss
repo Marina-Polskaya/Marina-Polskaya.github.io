@@ -1,6 +1,14 @@
 html {
-    height: 100%;
-    font-size: 18px;
+    //height: 100%;
+    font-size: $baseFontSize;
+
+    @include tablets {
+        font-size: $baseFontSize - 1px;
+    }
+
+    @include phones {  
+        font-size: $baseFontSize - 3px;  
+    }
 }
 body {
     position: relative;
@@ -13,14 +21,16 @@ body {
 .wrapper {
     position: relative;
     width: 100%;
-    min-width: $containerWidth + 20px;
+    //min-width: $containerWidth + 20px;
     min-height: 100%;
     overflow: hidden;
 }
 
 .container {
-    width: $containerWidth;
-    height: 100%;
+    width: 95%;
+    max-width: $containerWidth;
+    height: 100%; //убрать мин
+    //height: 100vh;
     margin: 0 auto;
 }
 

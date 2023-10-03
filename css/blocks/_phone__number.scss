@@ -1,21 +1,36 @@
 .phone-number {
     display: flex;
     justify-content: center;
+    padding-top: rem(7px);
+    
+    &.header__phone-number {
+
+        @include tablets {
+            display: none;
+        }
+    
+        @include phones {
+            display: none;
+        }
+    }
 }
 
 .phone-number__icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-right: 6px;
+    margin: rem(4px) rem(6px) rem(4px) 0;
+    width: rem(13px);
+    height: rem(14px);
+    flex-shrink: 0;
+    fill: white;
 } 
 
 .phone-number__icon-elem {
-    width: 13px;
-    height: 14px;
+    width: rem(13px);
+    height: rem(14px);
     overflow: hidden;
 }
+
 .phone-number__text {
-    font-size: 22px;
+    font-size: rem(22px);
     font-weight: bold;
+    white-space: nowrap;
 }

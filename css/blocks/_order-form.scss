@@ -1,8 +1,23 @@
 .order-form {
     color: #fff;
     background: linear-gradient(rgba(43, 43, 43, 0.6)), url('./../../../images/order-form/cd318b28c9ca7b595ef1ba2ba8ffdac9.png') 50% / cover no-repeat;
+    padding-top: 3%;
+
+    @include tablets {
+        padding-top: 5%;
+    }
+}
+
+.order-form__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .order-form__title {
-    margin-bottom: 64px;
+    margin-bottom: rem(64px);
+
+    @include tablets {
+        margin-bottom: rem(38px);
+    }
 }

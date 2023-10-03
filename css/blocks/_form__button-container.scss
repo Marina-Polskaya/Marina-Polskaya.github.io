@@ -1,3 +1,8 @@
 .form__button-container {
     display: inline-block;
+
+    @include tablets {
+        display: flex;
+        justify-content: center;
+    }
 }

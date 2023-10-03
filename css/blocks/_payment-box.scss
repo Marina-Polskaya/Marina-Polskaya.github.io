@@ -1,20 +1,45 @@
 .payment-box {
-    margin-top: 35px;
-    margin-bottom: 42px;
+    margin-top: rem(35px);
+    margin-bottom: rem(42px);
+
+    @include tablets {
+        margin-top: rem(9px);
+        margin-bottom: rem(40px);
+    }
+
+    @include phones {
+        margin-top: rem(20px);
+        margin-bottom: rem(56px);
+    }
 }
 
 .payment-box__row {
     display: flex;
-    margin-bottom: 14px;
+    margin-bottom: rem(14px);
 
     &:last-child {
         margin-bottom: 0;
+    }
+
+    @include tablets {
+        margin-bottom: rem(21px);
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    @include phones {
+        justify-content: center;
+        margin-bottom: rem(30px);
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 
 .payment-box__column {
     display: flex;
-    margin-right: 18px;
+    margin-right: rem(18px);
 
     &:last-child {
         margin-right: 0;
@@ -22,7 +47,7 @@
 }
 
 .payment-box__label {
-    line-height: 28px;
+    line-height: rem(28px);
 }
 
 .payment-box__radio-hide {
@@ -31,17 +56,17 @@
 
 .payment-box__radio-visible {
     position: relative;
-    width: 26px;
-    height: 26px;
+    width: rem(26px);
+    height: rem(26px);
     border-radius: 50%;
     background: #fff;
-    margin-right: 10px;
+    margin-right: rem(10px);
 
     &:before {
         content: '';
         position: absolute;
-        width: 14px;
-        height: 14px;
+        width: rem(14px);
+        height: rem(14px);
         background: $yellow;
         border-radius: 50%;
         top: 50%;
@@ -56,11 +81,11 @@
 
 .payment-box__check-visible {
     position: relative;
-    width: 24px;
-    height: 24px;
+    width: rem(24px);
+    height: rem(24px);
     border-radius: 15%;
     background: #fff;
-    margin-right: 10px;
+    margin-right: rem(10px);
 
     &:last-child {
         margin-right: 0;
@@ -69,8 +94,8 @@
 
 .payment-box__check-img {
     position: absolute;
-    width:  10px;
-    height: 8px;
-    top: 8px;
-    left: 8px;
+    width:  rem(10px);
+    height: rem(8px);
+    top: rem(8px);
+    left: rem(8px);
 }

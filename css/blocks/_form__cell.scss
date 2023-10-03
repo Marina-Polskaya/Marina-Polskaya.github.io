@@ -1,9 +1,10 @@
 .form__cell {
     flex: 1;
-    margin-right: 13px;
-    min-height: 80px;
+    margin-right: rem(13px);
+    //min-height: rem(80px);
 
     &:last-child {
         margin-right: 0;
     }
+
 }

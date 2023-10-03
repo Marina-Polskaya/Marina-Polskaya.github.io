@@ -1,4 +1,10 @@
 .logo {
-    width: 55.56px;
-    height: 39.26px;
+    width: rem(59px);
+    height: rem(41px);
+    flex-shrink: 0;
+
+    // @include phones {
+    //     width: rem(66px);
+    //     height: rem(49px);
+    // }
 }

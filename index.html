@@ -13,87 +13,115 @@
             <section class="hero">
                 <div class="container hero__container">
                     <header class="header">
-                            <img src="./images/hero/Vector.svg" alt="" class="logo">
-                            <nav class="menu">
-                                <ul class="menu__list">
-                                    <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
-                                    <li class="menu__item"><a href="#" class="menu__link">Серфборды</a></li>
-                                    <li class="menu__item"><a href="#" class="menu__link">Команда</a></li>
-                                    <li class="menu__item"><a href="#" class="menu__link">Меню</a></li>
-                                    <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
-                                    <li class="menu__item"><a href="#" class="menu__link">Как мы работаем</a></li>
-                                    <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
-                                </ul>
-                            </nav>
-                            <address class="phone-number">
-                                <div class="phone-number__icon">
-                                    <img src="./images/hero/phone.svg" alt="" class="phone-number__icon-elem">
-                                </div>
-                                <a href="tel:+78009039090" class="phone-number__text">8 800 903 90 90</a>
-                            </address>
+                        <svg class="logo">
+                            <use xlink:href="./images/icons/sprite.svg#logo"></use>
+                        </svg>
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Серфборды</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Команда</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Меню</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Как мы работаем</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <address class="phone-number header__phone-number">
+                                <svg class="phone-number__icon">
+                                    <use xlink:href="./images/icons/sprite.svg#phone"></use>
+                                </svg>
+                            <a href="tel:+78009039090" class="phone-number__text">8 800 903 90 90</a>
+                        </address>
                     </header>
                     <div class="hero__title-section">
-                        <h1 class="hero__main-title">ПРОФЕССИОНАЛЬНЫЕ ДОСКИ ДЛЯ <br>СЕРФИНГА</h1>
+                        <h1 class="hero__main-title">ПРОФЕССИОНАЛЬНЫЕ ДОСКИ ДЛЯ СЕРФИНГА</h1>
                         <div class="hero__title-description">Самый большой выбор серфбордов в мире</div>
                         <button type="submit" class="button">ЗАКАЗАТЬ</button>
                     </div>
                     <div class="hero__icons-container">
                         <div class="hero__icons">
-                            <img src="./images/hero/main-1.svg" alt="" class="hero__icon">
+                            <div class="hero__icon">
+                                <svg class="hero__icon-img">
+                                    <use xlink:href="./images/icons/sprite.svg#surfboard"></use>
+                                </svg>
+                            </div>
                             <div class="hero__icon-description">Уникальный дизайн</div>
                         </div>
                         <div class="hero__icons">
-                            <img src="./images/hero/main-2.svg" alt="" class="hero__icon">
+                            <div class="hero__icon">
+                                <svg class="hero__icon-img">
+                                    <use xlink:href="./images/icons/sprite.svg#materials"></use>
+                                </svg>
+                            </div>
                             <div class="hero__icon-description">Прочные материалы</div>
                         </div>
                         <div class="hero__icons">
-                            <img src="./images/hero/main-3.svg" alt="" class="hero__icon">
+                            <div class="hero__icon">
+                                <svg class="hero__icon-img">
+                                    <use xlink:href="./images/icons/sprite.svg#delivery"></use>
+                                </svg>
+                            </div>
                             <div class="hero__icon-description">Быстрая доставка</div>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="section why">
-                <div class="container">
+                <div class="container why__container">
                     <div class="headline">
                         <h2 class="section__title headline__title">ПОЧЕМУ SURFBOARD?</h2>
-                        <div class="headline__subtitle"><p>Мы создаем уникальные и качественные доски из прочных и экологичных материалов.</p></div>
+                        <div class="headline__subtitle">
+                            <p>Мы создаем уникальные и качественные доски из прочных и экологичных материалов.</p>
+                        </div>
                     </div>
                     <ul class="benefits">
                         <li class="benefits__item benefit">
                             <div class="benefit__image">
-                                <img src="./images/why/feat-2.svg" alt="" class="benefit__icon">
+                                <div class="benefit__icon">    
+                                    <svg class="benefit__icon-mini">
+                                        <use xlink:href="./images/icons/sprite.svg#ruler"></use>
+                                    </svg>
+                                </div>
                             </div>
-                            <div class="benefit__title">Perfect Fit</div>
-                            <p class="benefit__description">Мы создаем доски по индивидуальным замерам. Мы учитываем при создании ваш рост, вес и уровень подготовки.</p>
+                            <div class="benefit__text-container">
+                                <div class="benefit__title">Perfect Fit</div>
+                                    <div class="benefit__description">
+                                        <p>Мы создаем доски по индивидуальным замерам. Мы учитываем при создании ваш рост, вес и уровень подготовки.</p>
+                                    </div>
+                            </div>
                         </li>
                         <li class="benefits__item benefit">
                             <div class="benefit__image">
-                                <img src="./images/why/feat-1.svg" alt="" class="benefit__icon">
+                                <svg class="benefit__icon">
+                                    <use xlink:href="./images/icons/sprite.svg#plant"></use> 
+                                </svg>
                             </div>
-                            <div class="benefit__title">Strong</div>
-                            <div class="benefit__description">
-                                <p>Мы используем только качественные и экологичные материалы. Ваша доска прослужит вам долгие годы.</p>
+                            <div class="benefit__text-container">
+                                <div class="benefit__title">Strong</div>
+                                <div class="benefit__description">
+                                    <p>Мы используем только качественные и экологичные материалы. Ваша доска прослужит вам долгие годы.</p>
+                                </div>
                             </div>
                         </li>
                         <li class="benefits__item benefit">
                             <div class="benefit__image">
-                                <img src="./images/why/feat-3.svg" alt="" class="benefit__icon">
+                                <svg class="benefit__icon">
+                                    <use xlink:href="./images/icons/sprite.svg#unique"></use>    
+                                </svg>
                             </div>
-                            <div class="benefit__title">Unique</div>
-                            <p class="benefit__description">Вы станете обладателем уникального серфборда. Доска будет выполнена по вашему уникальному дизайну.</p>
+                            <div class="benefit__text-container">
+                                <div class="benefit__title">Unique</div>
+                                <div class="benefit__description">
+                                    <p>Вы станете обладателем уникального серфборда. Доска будет выполнена по вашему уникальному дизайну.</p>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </section>
-            <!-- <div class="boards-slider">
-            </div>
-            <section class="section">
-            </section>
-            <section class="section">
-            </section> -->
-            <section class="section">
-                <div class="container">
+            <section class="section review">
+                <div class="container review__container">
                     <h2 class="section__title">ОТЗЫВЫ</h2>
                     <div class="reviews">
                         <div class="reviews__display">
@@ -132,9 +160,8 @@
                     </div>
                 </div>
             </section>
-            <!-- <section class="section how"></section> -->
             <section class="section order-form">
-                <div class="container">
+                <div class="container order-form__container">
                     <h2 class="section__title order-form__title">ЗАКАЖИТЕ ДОСКУ</h2>
                     <form action="" id="order-form" class="form" method="post">
                         <div class="form__column">
@@ -202,20 +229,71 @@
                                             </div>
                                             <label for="dontCall" class="payment-box__label">Не перезванивать</label>
                                         </div>
-                                        <div class="payment-box__column">
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="form__button-container">
                                 <button class="button" type="submit">ЗАКАЗАТЬ</button>
-                                <button class="button__clear" type="reset">Очистить</button>
+                                <button class="button button__clear" type="reset">Очистить</button>
                             </div>
                         </div>
                     </form>                    
                 </div>
             </section>
+            <section class="contacts">
+                <div class="map">
+                    <div class="map__img"></div>
+                    <div class="footer">
+                        <address class="footer__container">
+                            <div class="footer__contacts">
+                                <a href="#" class="footer__address">Москва, ул.Новый Арбат, д.31/12</a>
+                                <address class="phone-number footer__phone">
+                                    <svg class="phone-number__icon footer__phone-icon">
+                                        <use xlink:href="./images/icons/sprite.svg#phone"></use>
+                                    </svg>
+                                    <a href="tel:+78009039090" class="phone-number__text footer__phone-text">8 800 903 90 90</a>
+                                </address>
+                            </div>
+                            <ul class="social-media">
+                                <li class="social-media__item">
+                                    <a href="#" class="social-media__link">
+                                        <svg class="social-media__icon">
+                                            <use xlink:href="./images/icons/sprite.svg#vk"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-media__item">
+                                    <a href="#" class="social-media__link">
+                                        <svg class="social-media__icon">
+                                            <use xlink:href="./images/icons/sprite.svg#fb"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-media__item">
+                                    <a href="#" class="social-media__link">
+                                        <svg class="social-media__icon">
+                                            <use xlink:href="./images/icons/sprite.svg#ig"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-media__item">
+                                    <a href="#" class="social-media__link">
+                                        <svg class="social-media__icon">
+                                            <use xlink:href="./images/icons/sprite.svg#tw"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </address>
+                    </div>
+                </div>
+            </section>
         </div>
+    </div>
+    <div class="burger">
+        <div class="burger__line"></div>
+        <div class="burger__line"></div>
+        <div class="burger__line"></div>
     </div>
     <nav class="fixed-menu">
         <ul class="fixed-menu__list">
