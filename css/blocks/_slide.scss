@@ -1,19 +1,17 @@
 .slide__item {
     display: flex;
     justify-content: center;
-    border: 1px solid red;
 }
 
 .slide__img {
-    //margin-right: rem(81px);
-    width: rem(396px);
-    height: rem(535px);
+    margin-right: rem(48px);
+    width: rem(419px);
+    height: rem(538px);
     flex-shrink: 0;
-    border: 1px solid red;
 }
 
 .slide__info {
-    padding: 3% ;
+    padding: 1% ;
 }
 
 .slide__headline {
@@ -25,9 +23,9 @@
 
 .slide__text {
     margin-bottom: rem(24px);
+    line-height: normal;
 }
 
 .slide-order {
     display: flex;
-    border: 1px solid orange;
 }

@@ -1,16 +1,18 @@
 .parameters {
+    padding: 0;
     position: relative;
     width: rem(91px);
     height: rem(91px);
     background-color: #3A587E;
-    //color: #fff;
     border-radius: 5%;
     margin-bottom: rem(52px);
+    text-align: center;
 }
 
 .parameters__img {
     width: rem(38px);
     height: rem(38px);
+    margin-bottom: rem(5px);
 }
 
 .parameters__text {

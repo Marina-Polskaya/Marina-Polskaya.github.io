@@ -1,7 +1,7 @@
 .options {
     display: flex;
     flex-direction: row;
-    border: 1px solid green;
+    margin-bottom: rem(21px);
 }
 
 .options__item {
@@ -12,7 +12,23 @@
     }
 }
 
+.options__title {
+    margin-bottom: rem(3px);
+}
+
 .options__description {
     display: flex;
     font-weight: 700;
+}
+
+.options__description-text {
+    margin-right: rem(3px);    
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.options__description-value {
+    margin-right: rem(3px);
 }

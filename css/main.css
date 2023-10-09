@@ -847,8 +847,8 @@ img {
 }
 
 .slider {
+  padding: 0 6% 0 11%;
   background-color: #F8FAF9;
-  border: 1px solid red;
 }
 
 .slider__container {
@@ -859,6 +859,9 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .slide__item {
@@ -868,19 +871,18 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1px solid red;
 }
 
 .slide__img {
-  width: 22rem;
-  height: 29.7222222222rem;
+  margin-right: 2.6666666667rem;
+  width: 23.2777777778rem;
+  height: 29.8888888889rem;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  border: 1px solid red;
 }
 
 .slide__info {
-  padding: 3%;
+  padding: 1%;
 }
 
 .slide__headline {
@@ -892,27 +894,45 @@ img {
 
 .slide__text {
   margin-bottom: 1.3333333333rem;
+  line-height: normal;
 }
 
 .slide-order {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid orange;
+}
+
+.slide-order__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 60px;
+}
+
+.slide-order__price-value {
+  margin-right: 0.5555555556rem;
+}
+
+.slide-order__price-currency {
+  margin-right: 3.3333333333rem;
 }
 
 .parameters {
+  padding: 0;
   position: relative;
   width: 5.0555555556rem;
   height: 5.0555555556rem;
   background-color: #3A587E;
   border-radius: 5%;
   margin-bottom: 2.8888888889rem;
+  text-align: center;
 }
 
 .parameters__img {
   width: 2.1111111111rem;
   height: 2.1111111111rem;
+  margin-bottom: 0.2777777778rem;
 }
 
 .parameters__text {
@@ -939,7 +959,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border: 1px solid green;
+  margin-bottom: 1.1666666667rem;
 }
 
 .options__item {
@@ -949,11 +969,26 @@ img {
   margin-right: 0;
 }
 
+.options__title {
+  margin-bottom: 0.1666666667rem;
+}
+
 .options__description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-weight: 700;
+}
+
+.options__description-text {
+  margin-right: 0.1666666667rem;
+}
+.options__description-text:last-child {
+  margin-right: 0;
+}
+
+.options__description-value {
+  margin-right: 0.1666666667rem;
 }
 
 .order-form {
