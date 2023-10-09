@@ -1,0 +1,18 @@
+.options {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid green;
+}
+
+.options__item {
+    margin-right: rem(52px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.options__description {
+    display: flex;
+    font-weight: 700;
+}

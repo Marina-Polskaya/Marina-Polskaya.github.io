@@ -846,6 +846,116 @@ img {
      object-fit: cover;
 }
 
+.slider {
+  background-color: #F8FAF9;
+  border: 1px solid red;
+}
+
+.slider__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.slide__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid red;
+}
+
+.slide__img {
+  width: 22rem;
+  height: 29.7222222222rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border: 1px solid red;
+}
+
+.slide__info {
+  padding: 3%;
+}
+
+.slide__headline {
+  margin-bottom: 1.3333333333rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.slide__text {
+  margin-bottom: 1.3333333333rem;
+}
+
+.slide-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid orange;
+}
+
+.parameters {
+  position: relative;
+  width: 5.0555555556rem;
+  height: 5.0555555556rem;
+  background-color: #3A587E;
+  border-radius: 5%;
+  margin-bottom: 2.8888888889rem;
+}
+
+.parameters__img {
+  width: 2.1111111111rem;
+  height: 2.1111111111rem;
+}
+
+.parameters__text {
+  font-size: 0.7777777778rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.parameters__list {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  display: none;
+  width: 11.1111111111rem;
+  height: 16.6666666667rem;
+  border: 1px solid green;
+}
+
+.options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 1px solid green;
+}
+
+.options__item {
+  margin-right: 2.8888888889rem;
+}
+.options__item:last-child {
+  margin-right: 0;
+}
+
+.options__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 700;
+}
+
 .order-form {
   color: #fff;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(43, 43, 43, 0.6))), url("./../../../images/order-form/cd318b28c9ca7b595ef1ba2ba8ffdac9.png") 50%/cover no-repeat;

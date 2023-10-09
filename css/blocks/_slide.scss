@@ -1,0 +1,33 @@
+.slide__item {
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+.slide__img {
+    //margin-right: rem(81px);
+    width: rem(396px);
+    height: rem(535px);
+    flex-shrink: 0;
+    border: 1px solid red;
+}
+
+.slide__info {
+    padding: 3% ;
+}
+
+.slide__headline {
+    margin-bottom: rem(24px);
+    font-size: rem(36px);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.slide__text {
+    margin-bottom: rem(24px);
+}
+
+.slide-order {
+    display: flex;
+    border: 1px solid orange;
+}

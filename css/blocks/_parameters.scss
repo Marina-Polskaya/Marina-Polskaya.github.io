@@ -1,0 +1,30 @@
+.parameters {
+    position: relative;
+    width: rem(91px);
+    height: rem(91px);
+    background-color: #3A587E;
+    //color: #fff;
+    border-radius: 5%;
+    margin-bottom: rem(52px);
+}
+
+.parameters__img {
+    width: rem(38px);
+    height: rem(38px);
+}
+
+.parameters__text {
+    font-size: rem(14px);
+    font-weight: 700;
+    color: #fff;
+}
+
+.parameters__list {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+    width: rem(200px);
+    height: rem(300px);
+    border: 1px solid green;
+}
