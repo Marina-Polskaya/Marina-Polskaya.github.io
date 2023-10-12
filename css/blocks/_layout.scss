@@ -29,8 +29,7 @@ body {
 .container {
     width: 95%;
     max-width: $containerWidth;
-    height: 100%; //убрать мин
-    //height: 100vh;
+    height: 100%;
     margin: 0 auto;
 }
 

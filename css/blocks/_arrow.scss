@@ -1,0 +1,17 @@
+.arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: rem(24px);
+    height: 100%;
+}
+
+.arrow__img {
+    width: rem(20px);
+    height: rem(40px);
+    z-index: 10;
+}
+
+.arrow__img-rotate {
+    transform: rotate(180deg);
+}

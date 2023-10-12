@@ -1,6 +1,15 @@
 .slider {
-    padding: 0 6% 0 11%;
+    padding: 0;
     background-color: $grayBg;
+}
+
+.slider__outside-container {
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    max-width: $containerWidth + 48px;
+    display: flex;
+    justify-content: center;
 }
 
 .slider__container {

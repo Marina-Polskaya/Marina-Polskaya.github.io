@@ -1,10 +1,12 @@
-const buttonParams = document.querySelector('.parameters');
-const paramList = document.querySelector('.parameters__list');
 
 
-buttonParams.addEventListener('click', function() {
-    paramList.style.display = 'block';
-});
+// const buttonParams = document.querySelector('.parameters');
+// const paramList = document.querySelector('.parameters__list');
+
+
+// buttonParams.addEventListener('click', function() {
+//     paramList.style.display = 'block';
+// });
 
 // $(function() {
 //     $('.parameters').on('click', function ()

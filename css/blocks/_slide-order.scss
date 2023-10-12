@@ -1,3 +1,10 @@
+.slide-order {
+    display: flex;
+    margin-right: rem(14px);
+    //border: 1px solid red;
+    justify-content: space-between;
+}
+
 .slide-order__price {
     display: flex;
     font-size: 60px;
@@ -5,8 +12,4 @@
 
 .slide-order__price-value {
     margin-right: rem(10px);
-}
-
-.slide-order__price-currency {
-    margin-right: rem(60px);
 }

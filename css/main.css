@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;200;300;400;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap");
-.boards-slider {
-  width: 100vw;
-  min-height: 642px;
-}
-
 html {
   font-size: 18px;
 }
@@ -846,9 +841,48 @@ img {
      object-fit: cover;
 }
 
+.arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1.3333333333rem;
+  height: 100%;
+}
+
+.arrow__img {
+  width: 1.1111111111rem;
+  height: 2.2222222222rem;
+  z-index: 10;
+}
+
+.arrow__img-rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .slider {
-  padding: 0 6% 0 11%;
+  padding: 0;
   background-color: #F8FAF9;
+}
+
+.slider__outside-container {
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 988px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .slider__container {
@@ -871,14 +905,24 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
+}
+
+.slide__img-container {
+  padding-left: 3.5555555556rem;
+  padding-right: 3.3333333333rem;
+  width: 30.1666666667rem;
+  height: 29.8888888889rem;
+  -ms-flex-negative: 0.04;
+      flex-shrink: 0.04;
 }
 
 .slide__img {
-  margin-right: 2.6666666667rem;
-  width: 23.2777777778rem;
-  height: 29.8888888889rem;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .slide__info {
@@ -893,7 +937,9 @@ img {
 }
 
 .slide__text {
+  padding-right: 2%;
   margin-bottom: 1.3333333333rem;
+  font-size: 1rem;
   line-height: normal;
 }
 
@@ -901,6 +947,16 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.slide-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 0.7777777778rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .slide-order__price {
@@ -912,10 +968,6 @@ img {
 
 .slide-order__price-value {
   margin-right: 0.5555555556rem;
-}
-
-.slide-order__price-currency {
-  margin-right: 3.3333333333rem;
 }
 
 .parameters {
