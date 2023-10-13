@@ -1,3 +1,23 @@
+const paramsBtn = document.querySelector('#params-btn');
+const paramsList = document.querySelector('#params-list');
+let computedStyles = getComputedStyle(paramsList);
+
+paramsBtn.addEventListener('mouseover', function(event) {
+    event.preventDefault();
+    paramsList.style.display = 'block';
+
+    paramsList.addEventListener('mouseleave', function() {
+        paramsList.style.display = 'none';
+        });
+    });
+
+    // if (computedStyles.display == 'block') {
+
+    //     paramsBtn.addEventListener('mouseleave', function() {
+    //         paramsList.style.display = 'none';
+    //     });
+    // }
+
 
 
 // const buttonParams = document.querySelector('.parameters');

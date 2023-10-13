@@ -1,0 +1,9 @@
+.feature {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.feature__name {
+    margin-right: rem(4px);
+}

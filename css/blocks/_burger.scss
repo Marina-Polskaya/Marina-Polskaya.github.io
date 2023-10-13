@@ -6,6 +6,7 @@
     width: rem(26px);
     height: rem(24px);
     cursor: pointer;
+    z-index: 15;
 
     @include tablets {
         display: inline-flex;
@@ -27,4 +28,20 @@
     height: rem(4px);
     background-color: #fff;
     border-radius: rem(2px);
+}
+
+.burger--active {
+    .burger__line {
+        &:nth-child(1) {
+            opacity: 0;
+        }
+
+        &:nth-child(2) {
+            transform: rotate(45deg);
+        }
+
+        &:nth-child(3) {
+            transform: rotate(-45deg) translateY(-8px) translateX(6px);
+        }
+    }
 }
