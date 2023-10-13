@@ -9,14 +9,15 @@
 }
 
 .slide__img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding-left: rem(64px);
-    padding-right: rem(60px);
-    //margin-right: 5.4%;
-    //margin: 0 6% 0 7%;
-    //width: rem(419px);
-    width: rem(543px);
-    height: rem(538px);
-    flex-shrink: 0.04;
+    max-width: rem(480px);
+    //height: rem(538px);
+    //width: rem(543px);
+    max-height: rem(538px);
+    flex-shrink: 1;
 }
 
 .slide__img {
@@ -27,7 +28,9 @@
 }
 
 .slide__info {
+    margin-left: 5.4%;
     padding: 1%;
+    flex: 1;
 }
 
 .slide__headline {
@@ -42,8 +45,5 @@
     margin-bottom: rem(24px);
     font-size: rem(18px);
     line-height: normal;
-}
-
-.slide-order {
-    display: flex;
+    color: $descTextColor;
 }

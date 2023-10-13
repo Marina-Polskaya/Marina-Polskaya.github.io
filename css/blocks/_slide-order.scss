@@ -1,13 +1,16 @@
 .slide-order {
     display: flex;
     margin-right: rem(14px);
-    //border: 1px solid red;
     justify-content: space-between;
 }
-
 .slide-order__price {
     display: flex;
     font-size: 60px;
+    font-weight: 300;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #151515;
+
 }
 
 .slide-order__price-value {
