@@ -22,18 +22,18 @@
     transform: rotate(180deg);
 }
 
-.arrow__left {
-    @include tablets {
-        // position: absolute;
-        // top: -18.5%;
-        // left: 16.8%;
-    }
-}
+// .arrow__left {
+//     @include tablets {
+//         // position: absolute;
+//         // top: -18.5%;
+//         // left: 16.8%;
+//     }
+// }
 
-.arrow__right {
-    @include tablets {
-        // position: absolute;
-        // top: -18.5%;
-        // right: 17.8%;
-    }
-}
+// .arrow__right {
+//     @include tablets {
+//         // position: absolute;
+//         // top: -18.5%;
+//         // right: 17.8%;
+//     }
+// }

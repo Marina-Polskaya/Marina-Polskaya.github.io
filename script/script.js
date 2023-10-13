@@ -45,7 +45,3 @@ function closeParamsMenu(event) {
 
 paramsBtn.addEventListener('mouseover', openParamsMenu);
 paramsList.addEventListener('mouseleave', closeParamsMenu);
-
-if ((window.matchMedia("(min-width: 480px)").matches) && (window.matchMedia("(max-width: 768px)").matches)) {
-    console.log('Media Query Matched!');
-}
