@@ -2,6 +2,15 @@
     display: flex;
     margin-right: rem(14px);
     justify-content: space-between;
+
+    @include tablets {
+        padding: 0 16% 0 16%;
+        margin-right: 0;
+    }
+    
+    @include phones {
+        padding: 0 4% 0 4%;
+    }
 }
 .slide-order__price {
     display: flex;
@@ -10,7 +19,6 @@
     line-height: 60px;
     text-transform: uppercase;
     color: #151515;
-
 }
 
 .slide-order__price-value {

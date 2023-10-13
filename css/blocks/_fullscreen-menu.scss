@@ -1,6 +1,8 @@
 .fullscreen-menu {
+    display: none;
 
     @include tablets {
+        padding-bottom: 20.4%;
         position: fixed;
         top: 0;
         left: 100%;
@@ -14,21 +16,23 @@
         transition: all 0.4s;
         z-index: 10;
     }
+
+    @include phones {
+        padding-bottom: 0;
+    }
 }
 
 .fullscreen-menu--active {
-    left: 0;
-}
+    display: none;
 
-.fullscreen-menu__list {
-    border: 1px solid #fff;
+    @include tablets {
+        left: 0;
+        display: flex;
+    }
 }
 
 .fullscreen-menu__item{
-
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 72px; 
-    border: 1px solid #fff;
+    text-align: center;
+    font-size: rem(36px);
+    line-height: rem(72px);
 }

@@ -68,7 +68,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section why">
+            <section class="section why" id="about">
                 <div class="container why__container">
                     <div class="headline">
                         <h2 class="section__title headline__title">ПОЧЕМУ SURFBOARD?</h2>
@@ -123,9 +123,9 @@
                     </ul>
                 </div>
             </section>
-            <section class="section slider">
+            <section class="section slider" id="slider">
                 <div class="slider__outside-container">
-                    <div class="arrow">
+                    <div class="arrow arrow__left">
                         <svg class="arrow__img">
                             <use xlink:href="./images/icons/sprite.svg#arrow"></use>
                         </svg>
@@ -246,14 +246,14 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="arrow">
+                    <div class="arrow arrow__right">
                         <svg class="arrow__img arrow__img-rotate">
                             <use xlink:href="./images/icons/sprite.svg#arrow"></use>
                         </svg>
                     </div>
                 </div>
             </section>
-            <section class="section review">
+            <section class="section review" id="reviews">
                 <div class="container review__container">
                     <h2 class="section__title review__title">ОТЗЫВЫ</h2>
                     <div class="reviews">
@@ -383,7 +383,7 @@
                     </form>
                 </div>
             </section>
-            <section class="contacts">
+            <section class="contacts" id="contacts">
                 <div class="map">
                     <div class="map__img"></div>
                     <div class="footer">
@@ -434,11 +434,6 @@
             </section>
         </div>
     </div>
-    <div class="burger burger--active" id="burger">
-        <div class="burger__line"></div>
-        <div class="burger__line"></div>
-        <div class="burger__line"></div>
-    </div>
     <nav class="fixed-menu">
         <ul class="fixed-menu__list">
             <li class="fixed-menu__point fixed-menu__point--active"><a href="" class="fixed-menu__link"></a></li>
@@ -452,17 +447,36 @@
             <li class="fixed-menu__point"><a href="" class="fixed-menu__link"></a></li>
         </ul>
     </nav>
-    <div class="fullscreen-menu fullscreen-menu--active">
-        <ul class="fullscreen-menu__list">
-            <li class="fullscreen-menu__item">О нас</li>
-            <li class="fullscreen-menu__item">Серфборды</li>
-            <li class="fullscreen-menu__item">Команда</li>
-            <li class="fullscreen-menu__item">Меню</li>
-            <li class="fullscreen-menu__item">Отзывы</li>
-            <li class="fullscreen-menu__item">Как мы работаем</li>
-            <li class="fullscreen-menu__item">Контакты</li>
-        </ul>
+    <div class="burger" id="burger">
+        <div class="burger__line"></div>
+        <div class="burger__line"></div>
+        <div class="burger__line"></div>
     </div>
+    <nav class="fullscreen-menu">
+        <ul class="fullscreen-menu__list">
+            <li class="fullscreen-menu__item">
+                <a href="#about" class="fullscreen-menu__link">О нас</a>
+            </li>
+            <li class="fullscreen-menu__item">
+                <a href="#slider" class="fullscreen-menu__link">Серфборды</a>
+            </li>
+            <li class="fullscreen-menu__item">
+                <a href="#" class="fullscreen-menu__link">Команда</a>
+            </li>
+            <li class="fullscreen-menu__item">
+                <a href="#" class="fullscreen-menu__link">Меню</a>
+            </li>
+            <li class="fullscreen-menu__item">
+                <a href="#reviews" class="fullscreen-menu__link">Отзывы</a>
+            </li>
+            <li class="fullscreen-menu__item">
+                <a href="#" class="fullscreen-menu__link">Как мы работаем</a>
+            </li>
+            <li class="fullscreen-menu__item">
+                <a href="#contacts" class="fullscreen-menu__link">Контакты</a>
+            </li>
+        </ul>
+    </nav>
     <script src="./script/script.js"></script>
 </body>
 </body>
