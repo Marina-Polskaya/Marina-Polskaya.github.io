@@ -13,6 +13,7 @@ links.forEach(function(elem){
 function toggleMenu() {
     burger.classList.toggle('burger--active');
     overlay.classList.toggle('fullscreen-menu--active');
+    body.classList.toggle('body--active-menu');
 }
 
 burger.addEventListener('click', toggleMenu);
@@ -22,17 +23,29 @@ burger.addEventListener('click', toggleMenu);
 
 //Slider menu
 
-const paramsBtn = document.querySelector('#params-btn');
-const paramsList = document.querySelector('#params-list');
+let paramsBtn = document.querySelector('#params-btn');
+let paramsList = document.querySelector('#params-list');
 let computedStyles = getComputedStyle(paramsList);
 
-paramsBtn.addEventListener('mouseover', function(event) {
+
+function openParamsMenu(event) {
     event.preventDefault();
     paramsList.style.display = 'block';
 
-    paramsList.addEventListener('mouseleave', function() {
-        paramsList.style.display = 'none';
-        });
-});
+    paramsBtn.addEventListener('mouseleave', function(e) {
+        if ((e.target === paramsBtn) && (e.relatedTarget !== paramsList)) {
+            paramsList.style.display = 'none';
+        }
+    });
+}
 
+function closeParamsMenu(event) {
+    paramsList.style.display = 'none';
+}
 
+paramsBtn.addEventListener('mouseover', openParamsMenu);
+paramsList.addEventListener('mouseleave', closeParamsMenu);
+
+if ((window.matchMedia("(min-width: 480px)").matches) && (window.matchMedia("(max-width: 768px)").matches)) {
+    console.log('Media Query Matched!');
+}
