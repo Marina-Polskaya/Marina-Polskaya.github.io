@@ -883,12 +883,29 @@ img {
           transform: rotate(180deg);
 }
 
+@media screen and (max-width: 768px) {
+  .arrow__left {
+    position: absolute;
+    top: -18.5%;
+    left: 16.8%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .arrow__right {
+    position: absolute;
+    top: -18.5%;
+    right: 17.8%;
+  }
+}
+
 .slider {
   padding: 0;
   background-color: #F8FAF9;
 }
 
 .slider__outside-container {
+  position: relative;
   width: 95%;
   height: 100%;
   margin: 0 auto;
