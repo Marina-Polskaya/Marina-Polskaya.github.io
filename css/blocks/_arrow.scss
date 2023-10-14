@@ -6,8 +6,30 @@
     height: 100%;
     flex-shrink: 0;
 
+    @include tablets {
+        padding-top: 9%;
+        height: auto;
+
+        &:first-child {
+            margin-right: rem(56px);
+        }
+
+        &:last-child {
+            margin-left: rem(46px);
+        }
+    }
+
     @include phones {
+
         height: 70%;
+        padding-top: 0;
+        &:first-child {
+            margin-right: 0;
+        }
+
+        &:last-child {
+            margin-left: 0;
+        }
     }
 }
 
