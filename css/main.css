@@ -1288,6 +1288,76 @@ img {
   margin-right: 0.1666666667rem;
 }
 
+.team__title {
+  margin-bottom: 5.2%;
+}
+
+.accordeon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.accordeon__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  margin-right: 1.1111111111rem;
+}
+.accordeon__item:last-child {
+  margin-right: 0;
+}
+
+.accordeon__link {
+  display: inline-block;
+  font-size: 1.1666666667rem;
+  font-weight: 700;
+}
+
+.accordeon__link-img {
+  width: 0.5rem;
+  height: 0.5rem;
+  overflow: hidden;
+}
+
+.accordeon__avatar {
+  margin-bottom: 1.2222222222rem;
+}
+
+.accordeon__avatar-img {
+  width: 12.2222222222rem;
+  height: 16.1111111111rem;
+  overflow: hidden;
+}
+
+.accordeon__content {
+  margin-top: 0.5rem;
+}
+
+.accordeon__content-wrap {
+  height: 0;
+  overflow: hidden;
+}
+
+.accordeon__content-title {
+  margin-bottom: 0.3333333333rem;
+}
+
+.accordeon__content-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 300;
+}
+
 .order-form {
   color: #fff;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(43, 43, 43, 0.6))), url("./../../../images/order-form/cd318b28c9ca7b595ef1ba2ba8ffdac9.png") 50%/cover no-repeat;

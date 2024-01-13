@@ -1,0 +1,17 @@
+.accordeon__content {
+    margin-top: rem(9px);
+}
+
+.accordeon__content-wrap {
+    height: 0;
+    overflow: hidden;
+}
+
+.accordeon__content-title {
+    margin-bottom: rem(6px);
+}
+
+.accordeon__content-description {
+    display: flex;
+    font-weight: 300;
+}
