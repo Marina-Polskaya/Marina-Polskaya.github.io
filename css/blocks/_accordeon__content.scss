@@ -7,6 +7,10 @@
     overflow: hidden;
 }
 
+.accordeon__content-active {
+    min-height: rem(80px);
+}
+
 .accordeon__content-title {
     margin-bottom: rem(6px);
 }

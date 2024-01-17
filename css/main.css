@@ -1347,6 +1347,10 @@ img {
   overflow: hidden;
 }
 
+.accordeon__content-active {
+  min-height: 4.4444444444rem;
+}
+
 .accordeon__content-title {
   margin-bottom: 0.3333333333rem;
 }
