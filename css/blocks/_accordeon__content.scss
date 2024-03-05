@@ -1,21 +1,46 @@
 .accordeon__content {
+    position: absolute;
     margin-top: rem(9px);
+    height: 0;
+    overflow: hidden;
+
+    @include tablets {
+        position: relative;
+
+        //left: 35%;
+
+    }
 }
 
 .accordeon__content-wrap {
-    height: 0;
-    overflow: hidden;
+    min-height: rem(80px);
+
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
-.accordeon__content-active {
-    min-height: rem(80px);
-}
+// .accordeon__content--active {
+//     min-height: rem(80px);
+// }
 
 .accordeon__content-title {
     margin-bottom: rem(6px);
+
+    @include tablets {
+        font-weight: 700;
+    }
 }
 
 .accordeon__content-description {
-    display: flex;
+    //display: flex;
     font-weight: 300;
+    //flex-wrap: wrap;
+    //justify-content: center;
+
+    @include tablets {
+        padding-bottom: rem(40px);
+    }
 }
