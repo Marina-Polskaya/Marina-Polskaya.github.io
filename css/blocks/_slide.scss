@@ -1,18 +1,18 @@
 .slide__item {
-    display: flex;
+    display: none;
     justify-content: center;
     width: 100%;
 
     @include tablets {
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+}
 
-    @include phones {
+.slide__item--active {
+    display: flex;
 
-    }
 }
 
 .slide__img-outside {

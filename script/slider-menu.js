@@ -1,22 +1,26 @@
-let paramsBtn = document.querySelector('#params-btn');
-let paramsList = document.querySelector('#params-list');
-let computedStyles = getComputedStyle(paramsList);
+const allParamBtns = $('.parameters');
 
+const activeBtnColor = btn => {
+    $(btn).css('background-color', '#3465A3');
+};
 
-function openParamsMenu(event) {
-    event.preventDefault();
-    paramsList.style.display = 'block';
+const inActiveBtnColor = btn => {
+    $(btn).css('background-color', '#3A587E');
+}
 
-    paramsBtn.addEventListener('mouseleave', function(e) {
-        if ((e.target === paramsBtn) && (e.relatedTarget !== paramsList)) {
-            paramsList.style.display = 'none';
-        }
+allParamBtns.on('mouseenter', function () {
+    activeBtnColor($(this));
+});
+
+allParamBtns.on('mouseleave', function () {
+    const thisParamBtn = $(this);
+    const paramlist = thisParamBtn.siblings('.parameters__list');
+
+    paramlist.on('mouseenter', function(e) {
+        activeBtnColor(thisParamBtn);
     });
-}
-
-function closeParamsMenu(event) {
-    paramsList.style.display = 'none';
-}
-
-paramsBtn.addEventListener('mouseover', openParamsMenu);
-paramsList.addEventListener('mouseleave', closeParamsMenu);
+    paramlist.on('mouseleave', function(e) {
+        inActiveBtnColor(thisParamBtn);
+    });
+    inActiveBtnColor(this);
+});

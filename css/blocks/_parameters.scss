@@ -14,6 +14,15 @@
     }
 }
 
+.parameters:hover {
+    background-color: #3465A3;
+}
+
+.parameters:hover + .parameters__list {
+    display: block;
+}
+
+
 .parameters__img {
     width: rem(38px);
     height: rem(38px);
@@ -27,10 +36,10 @@
 }
 
 .parameters__list {
+    display: none;
     position: absolute;
     top: rem(9px);
     left: rem(100px);
-    display: none;
     padding: rem(18px) rem(13px) rem(21px) rem(14px);
     width: rem(273px);
     height: rem(291px);
@@ -38,6 +47,10 @@
     border-radius: 4px;
     background: rgba(255, 255, 255, 0.90);
     box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 0.06);
+}
+
+.parameters__list:hover {
+    display: block;
 }
 
 .parameters__item {
