@@ -858,33 +858,41 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 0;
   width: 1.3333333333rem;
   height: 100%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  border: none;
+  background-color: initial;
+  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
   .arrow {
-    padding-top: 9%;
-    height: auto;
+    height: 2.2222222222rem;
+    position: absolute;
+    z-index: 1;
   }
   .arrow:first-child {
-    margin-right: 3.1111111111rem;
+    top: 31%;
+    right: 85.4%;
   }
   .arrow:last-child {
-    margin-left: 2.5555555556rem;
+    top: 31%;
+    left: 85.4%;
   }
 }
 @media screen and (max-width: 480px) {
   .arrow {
-    height: 70%;
-    padding-top: 0;
+    height: 100%;
   }
   .arrow:first-child {
-    margin-right: 0;
+    top: 0;
+    right: 96%;
   }
   .arrow:last-child {
-    margin-left: 0;
+    top: 0;
+    left: 96%;
   }
 }
 
@@ -894,28 +902,11 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 10;
 }
 
 .arrow__img-rotate {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-}
-
-@media screen and (max-width: 768px) {
-  .arrow__left {
-    position: absolute;
-    top: -18.5%;
-    left: 16.8%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .arrow__right {
-    position: absolute;
-    top: -18.5%;
-    right: 17.8%;
-  }
 }
 
 .slider {
@@ -959,14 +950,32 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.slider__container-wrap {
+  overflow: hidden;
+}
+
+.slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .slide__item {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 @media screen and (max-width: 768px) {
   .slide__item {
@@ -981,12 +990,6 @@ img {
         -ms-flex-align: center;
             align-items: center;
   }
-}
-
-.slide__item--active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .slide__img-outside {

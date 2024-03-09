@@ -19,13 +19,13 @@
                         </svg>
                         <nav class="menu">
                             <ul class="menu__list">
-                                <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
-                                <li class="menu__item"><a href="#" class="menu__link">Серфборды</a></li>
-                                <li class="menu__item"><a href="#" class="menu__link">Команда</a></li>
+                                <li class="menu__item"><a href="#about" class="menu__link">О нас</a></li>
+                                <li class="menu__item"><a href="#slider" class="menu__link">Серфборды</a></li>
+                                <li class="menu__item"><a href="#team" class="menu__link">Команда</a></li>
                                 <li class="menu__item"><a href="#" class="menu__link">Меню</a></li>
-                                <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
+                                <li class="menu__item"><a href="#reviews" class="menu__link">Отзывы</a></li>
                                 <li class="menu__item"><a href="#" class="menu__link">Как мы работаем</a></li>
-                                <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                                <li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
                             </ul>
                         </nav>
                         <address class="phone-number header__phone-number">
@@ -125,250 +125,252 @@
             </section>
             <section class="section slider" id="slider">
                 <div class="slider__outside-container">
-                    <div class="arrow arrow-left">
+                    <button class="arrow arrow-left">
                         <svg class="arrow__img">
                             <use xlink:href="./images/icons/sprite.svg#arrow"></use>
                         </svg>
-                    </div>
+                    </button>
                     <div class="container slider__container" id="slider-container">
-                        <ul class="slide">
-                            <li class="slide__item">
-                                <div class="slide__img-outside">
-                                    <div class="slide__img-container" id="slide-img-box">
-                                        <img src="./images/slider/surf-1.png" alt="" class="slide__img">
-                                    </div>
-                                </div>
-                                <div class="slide__info">
-                                    <button type="submit" class="parameters" id="params-btn">
-                                        <svg class="parameters__img">
-                                            <use xlink:href="./images/icons/sprite.svg#arrows"></use>
-                                        </svg>
-                                        <div class="parameters__text">ПАРАМЕТРЫ</div>
-                                    </button>
-                                    <ul class="parameters__list" id="params-list">
-                                        <li class="parameters__item">
-                                            <div class="parameters__link">
-                                                <div class="parameters__link-icon">
-                                                    <svg class="parameters__link-img">
-                                                        <use xlink:href="./images/icons/sprite.svg#length"></use>
-                                                    </svg>
-                                                </div>
-                                                <div class="feature">
-                                                    <div class="feature__name">Длина доски</div>
-                                                    <div class="feature__params">от 2,5 м</div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="parameters__item">
-                                            <div class="parameters__link">
-                                                <div class="parameters__link-icon">
-                                                    <svg class="parameters__link-img">
-                                                        <use xlink:href="./images/icons/sprite.svg#width"></use>
-                                                    </svg>
-                                                </div>
-                                                <div class="feature">
-                                                    <div class="feature__name">Ширина доски</div>
-                                                    <div class="feature__params">от 40 см</div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="parameters__item">
-                                            <div class="parameters__link">
-                                                <div class="parameters__link-icon">
-                                                    <svg class="parameters__link-img">
-                                                        <use xlink:href="./images/icons/sprite.svg#thickness"></use>
-                                                    </svg>
-                                                </div>
-                                                <div class="feature">
-                                                    <div class="feature__name">Толщина</div>
-                                                    <div class="feature__params">8 см</div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="parameters__item">
-                                            <div class="parameters__link">
-                                                <div class="parameters__link-icon">
-                                                    <svg class="parameters__link-img">
-                                                        <use xlink:href="./images/icons/sprite.svg#lifeTime"></use>
-                                                    </svg>
-                                                </div>
-                                                <div class="feature">
-                                                    <div class="feature__name">Срок службы</div>
-                                                    <div class="feature__params">5 лет</div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="parameters__item">
-                                            <div class="parameters__link">
-                                                <div class="parameters__link-icon">
-                                                    <svg class="parameters__link-img">
-                                                        <use xlink:href="./images/icons/sprite.svg#weight"></use>
-                                                    </svg>
-                                                </div>
-                                                <div class="feature">
-                                                    <div class="feature__name">Вес</div>
-                                                    <div class="feature__params">7-8 кг</div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <div class="slide__headline">ЛОНГБОРД 2.0</div>
-                                    <div class="slide__text">Устойчивая доска для новичков. На них легко лежать, сидеть,
-                                        грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень
-                                        маленькие и
-                                        пологие
-                                        волны и, не спеша, не прилагая особых усилий, ехать по ним.
-                                    </div>
-                                    <div class="options">
-                                        <div class="options__item">
-                                            <div class="options__title">Длина доски</div>
-                                            <div class="options__description">
-                                                <div class="options__description-text">от </div>
-                                                <div class="options__description-value">2,5</div>
-                                                <div class="options__description-text"> метров</div>
-                                            </div>
-                                        </div>
-                                        <div class="options__item">
-                                            <div class="options__title">Ширина доски</div>
-                                            <div class="options__description">
-                                                <div class="options__description-text">от </div>
-                                                <div class="options__description-value">40</div>
-                                                <div class="options__description-text"> сантиметров</div>
-                                            </div>
+                        <div class="slider__container-wrap">
+                            <ul class="slide">
+                                <li class="slide__item slide__item--active">
+                                    <div class="slide__img-outside">
+                                        <div class="slide__img-container" id="slide-img-box">
+                                            <img src="./images/slider/surf-1.png" alt="" class="slide__img">
                                         </div>
                                     </div>
-                                    <div class="slide-order">
-                                        <div class="slide-order__price">
-                                            <div class="slide-order__price-value">7000</div>
-                                            <div class="slide-order__price-currency">₽</div>
+                                    <div class="slide__info">
+                                        <button type="submit" class="parameters" id="params-btn">
+                                            <svg class="parameters__img">
+                                                <use xlink:href="./images/icons/sprite.svg#arrows"></use>
+                                            </svg>
+                                            <div class="parameters__text">ПАРАМЕТРЫ</div>
+                                        </button>
+                                        <ul class="parameters__list" id="params-list">
+                                            <li class="parameters__item">
+                                                <div class="parameters__link">
+                                                    <div class="parameters__link-icon">
+                                                        <svg class="parameters__link-img">
+                                                            <use xlink:href="./images/icons/sprite.svg#length"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="feature">
+                                                        <div class="feature__name">Длина доски</div>
+                                                        <div class="feature__params">от 2,5 м</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="parameters__item">
+                                                <div class="parameters__link">
+                                                    <div class="parameters__link-icon">
+                                                        <svg class="parameters__link-img">
+                                                            <use xlink:href="./images/icons/sprite.svg#width"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="feature">
+                                                        <div class="feature__name">Ширина доски</div>
+                                                        <div class="feature__params">от 40 см</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="parameters__item">
+                                                <div class="parameters__link">
+                                                    <div class="parameters__link-icon">
+                                                        <svg class="parameters__link-img">
+                                                            <use xlink:href="./images/icons/sprite.svg#thickness"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="feature">
+                                                        <div class="feature__name">Толщина</div>
+                                                        <div class="feature__params">8 см</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="parameters__item">
+                                                <div class="parameters__link">
+                                                    <div class="parameters__link-icon">
+                                                        <svg class="parameters__link-img">
+                                                            <use xlink:href="./images/icons/sprite.svg#lifeTime"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="feature">
+                                                        <div class="feature__name">Срок службы</div>
+                                                        <div class="feature__params">5 лет</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="parameters__item">
+                                                <div class="parameters__link">
+                                                    <div class="parameters__link-icon">
+                                                        <svg class="parameters__link-img">
+                                                            <use xlink:href="./images/icons/sprite.svg#weight"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="feature">
+                                                        <div class="feature__name">Вес</div>
+                                                        <div class="feature__params">7-8 кг</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="slide__headline">ЛОНГБОРД 2.0</div>
+                                        <div class="slide__text">Устойчивая доска для новичков. На них легко лежать, сидеть,
+                                            грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень
+                                            маленькие и
+                                            пологие
+                                            волны и, не спеша, не прилагая особых усилий, ехать по ним.
                                         </div>
-                                        <button class="button" type="submit">ЗАКАЗАТЬ</button>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="slide__item slide__item--active">
-                                <div class="slide__img-outside">
-                                    <div class="slide__img-container">
-                                        <img src="./images/slider/shortboard.png" alt="" class="slide__img">
-                                    </div>
-                                </div>
-                                <div class="slide__info">
-                                    <button class="parameters">
-                                        <svg class="parameters__img">
-                                            <use xlink:href="./images/icons/sprite.svg#arrows"></use>
-                                        </svg>
-                                        <div class="parameters__text">ПАРАМЕТРЫ</div>
-                                    </button>
-                                    <ul class="parameters__list">
-                                        <li class="parameters__item">
-                                            <div class="parameters__link">
-                                                <div class="parameters__link-icon">
-                                                    <svg class="parameters__link-img">
-                                                        <use xlink:href="./images/icons/sprite.svg#length"></use>
-                                                    </svg>
-                                                </div>
-                                                <div class="feature">
-                                                    <div class="feature__name">Длина доски</div>
-                                                    <div class="feature__params">от 1,5 м</div>
+                                        <div class="options">
+                                            <div class="options__item">
+                                                <div class="options__title">Длина доски</div>
+                                                <div class="options__description">
+                                                    <div class="options__description-text">от </div>
+                                                    <div class="options__description-value">2,5</div>
+                                                    <div class="options__description-text"> метров</div>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="parameters__item">
-                                            <div class="parameters__link">
-                                                <div class="parameters__link-icon">
-                                                    <svg class="parameters__link-img">
-                                                        <use xlink:href="./images/icons/sprite.svg#width"></use>
-                                                    </svg>
+                                            <div class="options__item">
+                                                <div class="options__title">Ширина доски</div>
+                                                <div class="options__description">
+                                                    <div class="options__description-text">от </div>
+                                                    <div class="options__description-value">40</div>
+                                                    <div class="options__description-text"> сантиметров</div>
                                                 </div>
-                                                <div class="feature">
-                                                    <div class="feature__name">Ширина доски</div>
-                                                    <div class="feature__params">от 30 см</div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="parameters__item">
-                                            <div class="parameters__link">
-                                                <div class="parameters__link-icon">
-                                                    <svg class="parameters__link-img">
-                                                        <use xlink:href="./images/icons/sprite.svg#thickness"></use>
-                                                    </svg>
-                                                </div>
-                                                <div class="feature">
-                                                    <div class="feature__name">Толщина</div>
-                                                    <div class="feature__params">8 см</div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="parameters__item">
-                                            <div class="parameters__link">
-                                                <div class="parameters__link-icon">
-                                                    <svg class="parameters__link-img">
-                                                        <use xlink:href="./images/icons/sprite.svg#lifeTime"></use>
-                                                    </svg>
-                                                </div>
-                                                <div class="feature">
-                                                    <div class="feature__name">Срок службы</div>
-                                                    <div class="feature__params">5 лет</div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="parameters__item">
-                                            <div class="parameters__link">
-                                                <div class="parameters__link-icon">
-                                                    <svg class="parameters__link-img">
-                                                        <use xlink:href="./images/icons/sprite.svg#weight"></use>
-                                                    </svg>
-                                                </div>
-                                                <div class="feature">
-                                                    <div class="feature__name">Вес</div>
-                                                    <div class="feature__params">7-8 кг</div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <div class="slide__headline">ШОРТБОРД</div>
-                                    <div class="slide__text">Самые быстрые доски для профессионалов. Размеры шортбордов позволяют 
-                                        быстро набирать скорость, делать различные трюки на волне, включая резкие повороты и развороты, 
-                                        флоатеры (проезды по самому гребню волны), различные прыжки с вращениями или без, а также катание 
-                                        в трубах.
-                                    </div>
-                                    <div class="options">
-                                        <div class="options__item">
-                                            <div class="options__title">Длина доски</div>
-                                            <div class="options__description">
-                                                <div class="options__description-text">от </div>
-                                                <div class="options__description-value">1,5</div>
-                                                <div class="options__description-text"> метров</div>
                                             </div>
                                         </div>
-                                        <div class="options__item">
-                                            <div class="options__title">Ширина доски</div>
-                                            <div class="options__description">
-                                                <div class="options__description-text">от </div>
-                                                <div class="options__description-value">30</div>
-                                                <div class="options__description-text"> сантиметров</div>
+                                        <div class="slide-order">
+                                            <div class="slide-order__price">
+                                                <div class="slide-order__price-value">7000</div>
+                                                <div class="slide-order__price-currency">₽</div>
+                                            </div>
+                                            <button class="button" type="submit">ЗАКАЗАТЬ</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="slide__item">
+                                    <div class="slide__img-outside">
+                                        <div class="slide__img-container">
+                                            <img src="./images/slider/shortboard.png" alt="" class="slide__img">
+                                        </div>
+                                    </div>
+                                    <div class="slide__info">
+                                        <button class="parameters">
+                                            <svg class="parameters__img">
+                                                <use xlink:href="./images/icons/sprite.svg#arrows"></use>
+                                            </svg>
+                                            <div class="parameters__text">ПАРАМЕТРЫ</div>
+                                        </button>
+                                        <ul class="parameters__list">
+                                            <li class="parameters__item">
+                                                <div class="parameters__link">
+                                                    <div class="parameters__link-icon">
+                                                        <svg class="parameters__link-img">
+                                                            <use xlink:href="./images/icons/sprite.svg#length"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="feature">
+                                                        <div class="feature__name">Длина доски</div>
+                                                        <div class="feature__params">от 1,5 м</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="parameters__item">
+                                                <div class="parameters__link">
+                                                    <div class="parameters__link-icon">
+                                                        <svg class="parameters__link-img">
+                                                            <use xlink:href="./images/icons/sprite.svg#width"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="feature">
+                                                        <div class="feature__name">Ширина доски</div>
+                                                        <div class="feature__params">от 30 см</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="parameters__item">
+                                                <div class="parameters__link">
+                                                    <div class="parameters__link-icon">
+                                                        <svg class="parameters__link-img">
+                                                            <use xlink:href="./images/icons/sprite.svg#thickness"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="feature">
+                                                        <div class="feature__name">Толщина</div>
+                                                        <div class="feature__params">8 см</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="parameters__item">
+                                                <div class="parameters__link">
+                                                    <div class="parameters__link-icon">
+                                                        <svg class="parameters__link-img">
+                                                            <use xlink:href="./images/icons/sprite.svg#lifeTime"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="feature">
+                                                        <div class="feature__name">Срок службы</div>
+                                                        <div class="feature__params">5 лет</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="parameters__item">
+                                                <div class="parameters__link">
+                                                    <div class="parameters__link-icon">
+                                                        <svg class="parameters__link-img">
+                                                            <use xlink:href="./images/icons/sprite.svg#weight"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="feature">
+                                                        <div class="feature__name">Вес</div>
+                                                        <div class="feature__params">7-8 кг</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="slide__headline">ШОРТБОРД</div>
+                                        <div class="slide__text">Самые быстрые доски для профессионалов. Размеры шортбордов позволяют 
+                                            быстро набирать скорость, делать различные трюки на волне, включая резкие повороты и развороты, 
+                                            флоатеры (проезды по самому гребню волны), различные прыжки с вращениями или без, а также катание 
+                                            в трубах.
+                                        </div>
+                                        <div class="options">
+                                            <div class="options__item">
+                                                <div class="options__title">Длина доски</div>
+                                                <div class="options__description">
+                                                    <div class="options__description-text">от </div>
+                                                    <div class="options__description-value">1,5</div>
+                                                    <div class="options__description-text"> метров</div>
+                                                </div>
+                                            </div>
+                                            <div class="options__item">
+                                                <div class="options__title">Ширина доски</div>
+                                                <div class="options__description">
+                                                    <div class="options__description-text">от </div>
+                                                    <div class="options__description-value">30</div>
+                                                    <div class="options__description-text"> сантиметров</div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="slide-order">
-                                        <div class="slide-order__price">
-                                            <div class="slide-order__price-value">12000</div>
-                                            <div class="slide-order__price-currency">₽</div>
+                                        <div class="slide-order">
+                                            <div class="slide-order__price">
+                                                <div class="slide-order__price-value">12000</div>
+                                                <div class="slide-order__price-currency">₽</div>
+                                            </div>
+                                            <button class="button" type="submit">ЗАКАЗАТЬ</button>
                                         </div>
-                                        <button class="button" type="submit">ЗАКАЗАТЬ</button>
                                     </div>
-                                </div>
-                            </li>
-                        </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="arrow arrow-right">
+                    <button class="arrow arrow-right">
                         <svg class="arrow__img arrow__img-rotate">
                             <use xlink:href="./images/icons/sprite.svg#arrow"></use>
                         </svg>
-                    </div>
+                    </button>
                 </div>
             </section>
-            <section class="section team">
+            <section class="section team" id="team">
                 <div class="container team__container">
                     <h2 class="section__title team__title">КОМАНДА</h2>
                     <ul class="accordeon accordeon--version--desktop">
@@ -681,7 +683,7 @@
                 <a href="#slider" class="fullscreen-menu__link">Серфборды</a>
             </li>
             <li class="fullscreen-menu__item">
-                <a href="#" class="fullscreen-menu__link">Команда</a>
+                <a href="#team" class="fullscreen-menu__link">Команда</a>
             </li>
             <li class="fullscreen-menu__item">
                 <a href="#" class="fullscreen-menu__link">Меню</a>
@@ -702,7 +704,6 @@
     <script src="./script/order-form.js"></script>
     <script src="./script/fullscreen-menu.js"></script>
     <script src="./script/slider-menu.js"></script>
-    <script src="./script/slider-arrows.js"></script>
     <script src="./script/slider.js"></script>
 </body>
 </body>

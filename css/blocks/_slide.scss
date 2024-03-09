@@ -1,18 +1,19 @@
+.slide {
+    display: flex;
+    transition: all 1s;
+}
+
 .slide__item {
-    display: none;
+    display: flex;
     justify-content: center;
     width: 100%;
+    flex-shrink: 0;
 
     @include tablets {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-}
-
-.slide__item--active {
-    display: flex;
-
 }
 
 .slide__img-outside {

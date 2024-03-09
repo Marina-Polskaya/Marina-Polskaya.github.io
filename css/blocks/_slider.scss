@@ -27,4 +27,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.slider__container-wrap {
+    overflow: hidden;
 }
