@@ -1,0 +1,26 @@
+
+.arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: rem(24px);
+    height: 100%;
+    border: 1px solid gray;
+}
+
+.arrow-left {
+    width: rem(20px);
+    height: rem(40px);
+    //display: flex;
+    //flex-direction: column;
+    //justify-content: center;
+    //width: rem(24px);
+    //height: 100%;
+    border: 1px solid gray;
+}
+
+.arrow-left__img {
+    width: rem(24px);
+    height: rem(40px);
+    border: 1px solid red;
+}
