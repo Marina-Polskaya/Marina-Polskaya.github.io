@@ -872,6 +872,7 @@ img {
   border: none;
   background-color: initial;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 @media screen and (max-width: 768px) {
   .arrow {
