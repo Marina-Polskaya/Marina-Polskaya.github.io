@@ -1,4 +1,4 @@
-.reviews__display {
+.reviews__list {
     padding: rem(42px);
     margin-bottom: rem(15px);
     background-color: $grayBg;
@@ -14,15 +14,19 @@
     }
 }
 
-.reviews__display-inner {
-    display: flex;
+.reviews__item {
+    display: none;
+    min-height: rem(264px);
 
     @include tablets {
         flex-direction: column;
         text-align: center;
         align-items: center;
-
     }
+}
+
+.reviews__item--active {
+    display: flex;
 }
 
 .reviews__avatar {

@@ -479,8 +479,8 @@
                 <div class="container review__container">
                     <h2 class="section__title review__title">ОТЗЫВЫ</h2>
                     <div class="reviews">
-                        <div class="reviews__display">
-                            <div class="reviews__display-inner">
+                        <ul class="reviews__list">
+                        <li class="reviews__item reviews__item--active" data-linked-with="one">
                                 <div class="reviews__avatar">
                                     <img src="./images/reviews/reviews1.png" alt="" class="reviews__avatar-img">
                                 </div>
@@ -496,21 +496,52 @@
                                     </div>
                                     <div class="reviews__author">Ольга Макарова</div>
                                 </article>
-                            </div>
-                        </div>
+                            </li>
+                            <li class="reviews__item" data-linked-with="two">
+                                <div class="reviews__avatar">
+                                    <img src="./images/reviews/reviews2.png" alt="" class="reviews__avatar-img">
+                                </div>
+                                <article class="reviews__content">
+                                    <h3 class="reviews__title">Нереальная скорость</h3>
+                                    <div class="reviews__text">
+                                        <p>Я занимаюсь профессиональным спортом. Доверил изготовление доски для соревнований 
+                                            ребятам из Surfboard и не пожалел: 1 место на соревнованиях. 
+                                            Нереальная скорость, устойчивая, удобная и легкая: всё что нужно для победы на соревнованиях!
+                                        </p>
+                                    </div>
+                                    <div class="reviews__author">Марк Брюлов</div>
+                                </article>
+                            </li>
+                            <li class="reviews__item" data-linked-with="three">
+                                <div class="reviews__avatar">
+                                    <img src="./images/reviews/reviews3.png" alt="" class="reviews__avatar-img">
+                                </div>
+                                <article class="reviews__content">
+                                    <h3 class="reviews__title">Устойчивость и безопасность</h3>
+                                    <div class="reviews__text">
+                                        <p>
+                                            Я заказывал доски для своих детей. Мне было важно, чтобы они были устойчивые, так как 
+                                            безопасность детей на первом месте. Доски были изготовлены по индивидуальным замерам 
+                                            с учетом роста и веса каждого ребенка. Теперь дети катаются и им нравится!
+                                        </p>
+                                    </div>
+                                    <div class="reviews__author">Василий Поперечный</div>
+                                </article>
+                            </li>
+                        </ul>
                         <ul class="reviews__switcher">
-                            <li class="reviews__switcher-item interractive-avatar interractive-avatar--active">
-                                <a href="#" class="interractive-avatar__link">
+                            <li class="reviews__switcher-item interractive-avatar interractive-avatar--active" data-open="one">
+                                <a href="" class="interractive-avatar__link">
                                     <img src="./images/reviews/reviews1.png" alt="" class="interractive-avatar__img">
                                 </a>
                             </li>
-                            <li class="reviews__switcher-item interractive-avatar">
-                                <a href="#" class="interractive-avatar__link">
+                            <li class="reviews__switcher-item interractive-avatar" data-open="two">
+                                <a href="" class="interractive-avatar__link">
                                     <img src="./images/reviews/reviews2.png" alt="" class="interractive-avatar__img">
                                 </a>
                             </li>
-                            <li class="reviews__switcher-item interractive-avatar">
-                                <a href="#" class="interractive-avatar__link">
+                            <li class="reviews__switcher-item interractive-avatar" data-open="three">
+                                <a href="" class="interractive-avatar__link">
                                     <img src="./images/reviews/reviews3.png" alt="" class="interractive-avatar__img">
                                 </a>
                             </li>
@@ -607,7 +638,7 @@
             </section>
             <section class="contacts" id="contacts">
                 <div class="map">
-                    <div class="map__img"></div>
+                    <div class="map__container" id="map"></div>
                     <div class="footer">
                         <address class="footer__container">
                             <div class="footer__contacts">
@@ -700,11 +731,14 @@
         </ul>
     </nav>
     <script src="./script/jquery-3.7.1.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="./script/accordeon.js"></script>
     <script src="./script/order-form.js"></script>
     <script src="./script/fullscreen-menu.js"></script>
     <script src="./script/slider-menu.js"></script>
     <script src="./script/slider.js"></script>
+    <script src="./script/reviews.js"></script>
+    <script src="./script/map.js"></script>
 </body>
 </body>
 </html>

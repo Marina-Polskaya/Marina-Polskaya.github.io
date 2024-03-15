@@ -694,31 +694,30 @@ img {
   }
 }
 
-.reviews__display {
+.reviews__list {
   padding: 2.3333333333rem;
   margin-bottom: 0.8333333333rem;
   background-color: #F8FAF9;
 }
 @media screen and (max-width: 768px) {
-  .reviews__display {
+  .reviews__list {
     padding: 3.4444444444rem 1.3333333333rem 2.5555555556rem 1.3333333333rem;
     margin-bottom: 2.1111111111rem;
   }
 }
 @media screen and (max-width: 480px) {
-  .reviews__display {
+  .reviews__list {
     padding: 1.6666666667rem 1.3333333333rem 1.2222222222rem 1.3333333333rem;
     margin-bottom: 1rem;
   }
 }
 
-.reviews__display-inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.reviews__item {
+  display: none;
+  min-height: 14.6666666667rem;
 }
 @media screen and (max-width: 768px) {
-  .reviews__display-inner {
+  .reviews__item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -728,6 +727,12 @@ img {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+.reviews__item--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .reviews__avatar {
@@ -820,12 +825,15 @@ img {
 
 .interractive-avatar {
   position: relative;
-  width: 4.1111111111rem;
-  height: 4.1111111111rem;
+  width: 4.7777777778rem;
+  height: 4.7777777778rem;
   border-radius: 50%;
+  border: 0.3333333333rem solid rgba(0, 0, 0, 0);
   overflow: hidden;
 }
 .interractive-avatar--active {
+  width: 4.7777777778rem;
+  height: 4.7777777778rem;
   border: 0.3333333333rem solid #FEDB3F;
 }
 
@@ -836,8 +844,6 @@ img {
   height: 100%;
   top: 0;
   right: 0;
-  bottom: 0;
-  left: 0;
 }
 
 .interractive-avatar__img {
@@ -1784,10 +1790,9 @@ img {
   min-height: 100vh;
 }
 
-.map__img {
-  min-height: 100vh;
-  background: url("./../../images/contacts/map1100.png") 70% 0 no-repeat;
-  background-size: cover;
+.map__container {
+  width: 100vw;
+  height: 100vh;
 }
 
 .footer {
