@@ -9,6 +9,7 @@
     border: none;
     background-color: initial;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 
     @include tablets {
         height: rem(40px);
