@@ -1,3 +1,97 @@
+
+const phone = document.querySelector('#phone');
+phone.addEventListener('keydown', function(e) {
+    let isDigit = false;
+    let isDash = false;
+    let isControl = false;
+    let isPlus = false;
+
+    if (e.key >= 0 && e.key <=9) {
+        isDigit = true;
+    }
+    
+    if (e.key == '-') {
+        isDash = true;
+    } 
+    
+    if (e.key == 'ArrowLeft' || e.key == 'ArrowRight' || e.key == 'Backspace') {
+        isControl = true;
+    } 
+
+    if (e.key == '+') {
+        isPlus = true;
+    }
+
+    if (!isDigit && !isDash && !isControl && !isPlus) {
+        e.preventDefault();
+    }
+});
+
+
+
+const orderForm = document.querySelector('#order-form');
+const formButton = document.querySelector("#form-button");
+
+formButton.addEventListener('click', function (event) {
+    event.preventDefault();
+    
+    if (validateForm(orderForm)) {
+        const data = {
+            name: orderForm.elements.name.value,
+            phone: orderForm.elements.phone.value,
+            comment: orderForm.elements.comment.value,
+            to: orderForm.elements.email.value
+        };
+
+        const dataJson = JSON.stringify(data);
+
+        const xhr = new XMLHttpRequest();
+        xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
+        xhr.setRequestHeader('content-type', 'application/json');
+        xhr.send(dataJson);
+
+        xhr.addEventListener('load', function() {
+            if (xhr.status >= 400) {
+                console.log(xhr.statusText);
+            } else {
+                console.log(JSON.parse(xhr.responseText));
+            }
+        });
+    }
+});
+
+function validateForm(form) {
+    let valid = true;
+
+    if (!validateFild(form.elements.name)) {
+        valid = false;
+    }
+
+    if (!validateFild(form.elements.phone)) {
+        valid = false;
+    }
+
+    if (!validateFild(form.elements.email)) {
+        valid = false;
+    }
+
+    if (!validateFild(form.elements.comment)) {
+        valid = false;
+    }
+
+    return valid;
+}
+
+function validateFild(field) {
+    let valid = true;
+    if (!field.checkValidity()) {
+        field.style.borderColor = 'red';
+        field.style.backgroundColor = '#fcd4d4';
+        valid = false;
+    }
+    return valid;
+}
+
 /*const customerPhone = document.querySelector('#phone');
 customerPhone.addEventListener('keydown', function(e) {
     console.log(e.key);
@@ -136,28 +230,6 @@ password.addEventListener('input', (e) => {
         e.target.classList.add('test-password__invalid');
     }
 });*/
-
-const phone = document.querySelector('#phone');
-phone.addEventListener('keydown', function(e) {
-    let isDigit = false;
-    let isDash = false;
-    let isControl = false;
-
-    if (e.key >= 0 && e.key <=9) {
-        isDigit = true;
-    }
-    
-    if (e.key == '-') {
-        isDash = true;
-    } 
-    
-    if (e.key == 'ArrowLeft' || e.key == 'ArrowRight' || e.key == 'Backspace') {
-        isControl = true;
-    } 
-    if (!isDigit && !isDash && !isControl) {
-        e.preventDefault();
-    }
-});
 /////////////////////////////////////////////////////////////
 // const testForm = document.querySelector('#test-form');
 // const testBtn = document.querySelector('#send-button');
@@ -243,11 +315,11 @@ const isHtml = somePath => {
 
 console.log(isHtml(path));*/
 
-const initialArray = [3,13,74,14,66,15,22,4];
+// const initialArray = [3,13,74,14,66,15,22,4];
 
-const isEven = num => {
-    return ((num % 2 == 0) ? true : false);
-};
+// const isEven = num => {
+//     return ((num % 2 == 0) ? true : false);
+// };
 
 /*let filterArray = initialArr => {
     let currentArr = [];

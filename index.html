@@ -557,24 +557,27 @@
                             <div class="form__row">
                                 <div class="form__cell">
                                     <label for="name" class="form__label">Имя</label>
-                                    <input type="text" class="form__input" name="name" id="name">
+                                    <input type="text" class="form__input" name="name" id="name" required>
                                 </div>
                                 <div class="form__cell">
                                     <label for="phone" class="form__label">Телефон</label>
-                                    <input type="text" class="form__input" name="phone" id="phone"
-                                        placeholder="89022348912">
+                                    <input type="text" class="form__input" name="phone" id="phone" placeholder="89022348912" required>
                                 </div>
                             </div>
                             <div class="form__row">
                                 <div class="form__cell">
+                                    <label for="email" class="form__label">Email</label>
+                                    <input type="email" class="form__input" name="email" id="email" required>
+                                </div>
+                                <div class="form__cell">
                                     <label for="street" class="form__label">Улица</label>
-                                    <input type="text" class="form__input" name="street" id="street">
+                                    <input type="text" class="form__input" name="street" id="street" required>
                                 </div>
                             </div>
                             <div class="form__row">
                                 <div class="form__cell">
                                     <label for="house" class="form__label">Дом</label>
-                                    <input type="text" class="form__input" name="house" id="house">
+                                    <input type="text" class="form__input" name="house" id="house" required>
                                 </div>
                                 <div class="form__cell">
                                     <label for="part" class="form__label">Корпус</label>
@@ -595,8 +598,7 @@
                                 <div class="form__row">
                                     <div class="form__cell">
                                         <label for="comment" class="form__label">Комментарий</label>
-                                        <textarea name="comment" cols="46" rows="7" class="form__textarea"
-                                            id="comment"></textarea>
+                                        <textarea name="comment" cols="46" rows="7" class="form__textarea" id="comment" required></textarea>
                                     </div>
                                 </div>
                                 <div class="payment-box">
@@ -629,10 +631,44 @@
                                 </div>
                             </div>
                             <div class="form__button-container">
-                                <button class="button" type="submit">ЗАКАЗАТЬ</button>
+                                <button class="button" type="submit" id="form-button">ЗАКАЗАТЬ</button>
                                 <button class="button button__clear" type="reset">Очистить</button>
                             </div>
                         </div>
+                    </form>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <form action="" id="test-form">
+                        <div class="form__row">
+                            <div class="form__cell">
+                                <label for="test-name" class="form__label">Имя</label>
+                                <input type="text" id="test-name" name="name">
+                            </div>
+                        </div>
+                        <div class="form_row">
+                            <div class="form__cell">
+                                <label for="test-lastname" class="form__label">Фамилия</label>
+                                <input type="text" id="test-lastname" name="lastName">
+                            </div>
+                        </div>
+                        <div class="form_row">
+                            <div class="form__cell">
+                                <label for="test-gender" class="form__label">Пол</label>
+                                <select name="gender" id="test-gender" style="margin-top: 10px; margin-bottom: 10px;">
+                                    <option value="male">Мужской</option>
+                                    <option value="female">Женский</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form_row">
+                            <div class="form__cell">
+                                <input type="checkbox" id="test-auto" name="isAuto">
+                                <label for="test-auto">есть автомобиль</label>
+                            </div>
+                        </div>
+                        <button class="button" id="test-btn">ОТПРАВИТЬ</button>
                     </form>
                 </div>
             </section>
@@ -739,6 +775,6 @@
     <script src="./script/slider.js"></script>
     <script src="./script/reviews.js"></script>
     <script src="./script/map.js"></script>
-</body>
+    <script src="./script/test.js"></script>
 </body>
 </html>
