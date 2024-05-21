@@ -9,9 +9,14 @@
 }
 
 .order-form__container {
+    //display: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    &--inactive {
+        display: none;
+    }
 }
 
 .order-form__title {

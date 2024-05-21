@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surfboard</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -549,23 +550,34 @@
                     </div>
                 </div>
             </section>
-            <section class="section order-form">
-                <div class="container order-form__container">
+            <section class="section order-form" id="section-order-form">
+                <div class="container response__container" id="response-container">
+                    <div class="modal" id="modal">
+                        <div class="modal__container">
+                            <div class="modal__content" id="modal-content">Сообщение отправлено</div>
+                            <button class="button modal__button" id="modal-btn">ЗАКРЫТЬ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container order-form__container" id="order-form-container">
                     <h2 class="section__title order-form__title">ЗАКАЖИТЕ ДОСКУ</h2>
                     <form action="" id="order-form" class="form" method="post">
                         <div class="form__column">
                             <div class="form__row">
                                 <div class="form__cell">
                                     <label for="name" class="form__label">Имя</label>
-                                    <input type="text" class="form__input" name="name" id="name">
+                                    <input type="text" class="form__input" name="name" id="name" required>
                                 </div>
                                 <div class="form__cell">
                                     <label for="phone" class="form__label">Телефон</label>
-                                    <input type="text" class="form__input" name="phone" id="phone"
-                                        placeholder="89022348912">
+                                    <input type="text" class="form__input" name="phone" id="phone" placeholder="89022348912" required>
                                 </div>
                             </div>
                             <div class="form__row">
+                                <div class="form__cell">
+                                    <label for="email" class="form__label">Email</label>
+                                    <input type="email" class="form__input" name="email" id="email" required>
+                                </div>
                                 <div class="form__cell">
                                     <label for="street" class="form__label">Улица</label>
                                     <input type="text" class="form__input" name="street" id="street">
@@ -595,8 +607,7 @@
                                 <div class="form__row">
                                     <div class="form__cell">
                                         <label for="comment" class="form__label">Комментарий</label>
-                                        <textarea name="comment" cols="46" rows="7" class="form__textarea"
-                                            id="comment"></textarea>
+                                        <textarea name="comment" cols="46" rows="7" class="form__textarea" id="comment" required></textarea>
                                     </div>
                                 </div>
                                 <div class="payment-box">
@@ -629,11 +640,15 @@
                                 </div>
                             </div>
                             <div class="form__button-container">
-                                <button class="button" type="submit">ЗАКАЗАТЬ</button>
+                                <button class="button" type="submit" id="form-button">ЗАКАЗАТЬ</button>
                                 <button class="button button__clear" type="reset">Очистить</button>
                             </div>
                         </div>
                     </form>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
                 </div>
             </section>
             <section class="contacts" id="contacts">
@@ -731,6 +746,7 @@
         </ul>
     </nav>
     <script src="./script/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="./script/accordeon.js"></script>
     <script src="./script/order-form.js"></script>
@@ -739,6 +755,7 @@
     <script src="./script/slider.js"></script>
     <script src="./script/reviews.js"></script>
     <script src="./script/map.js"></script>
-</body>
+    <script src="./script/test.js"></script>
+    <script src="./script/formInputConstraints.js"></script>
 </body>
 </html>
