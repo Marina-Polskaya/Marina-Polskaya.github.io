@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surfboard</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -549,8 +550,16 @@
                     </div>
                 </div>
             </section>
-            <section class="section order-form">
-                <div class="container order-form__container">
+            <section class="section order-form" id="section-order-form">
+                <div class="container response__container" id="response-container">
+                    <div class="modal" id="modal">
+                        <div class="modal__container">
+                            <div class="modal__content" id="modal-content">Сообщение отправлено</div>
+                            <button class="button modal__button" id="modal-btn">ЗАКРЫТЬ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container order-form__container" id="order-form-container">
                     <h2 class="section__title order-form__title">ЗАКАЖИТЕ ДОСКУ</h2>
                     <form action="" id="order-form" class="form" method="post">
                         <div class="form__column">
@@ -571,13 +580,13 @@
                                 </div>
                                 <div class="form__cell">
                                     <label for="street" class="form__label">Улица</label>
-                                    <input type="text" class="form__input" name="street" id="street" required>
+                                    <input type="text" class="form__input" name="street" id="street">
                                 </div>
                             </div>
                             <div class="form__row">
                                 <div class="form__cell">
                                     <label for="house" class="form__label">Дом</label>
-                                    <input type="text" class="form__input" name="house" id="house" required>
+                                    <input type="text" class="form__input" name="house" id="house">
                                 </div>
                                 <div class="form__cell">
                                     <label for="part" class="form__label">Корпус</label>
@@ -640,36 +649,6 @@
             </section>
             <section class="section">
                 <div class="container">
-                    <form action="" id="test-form">
-                        <div class="form__row">
-                            <div class="form__cell">
-                                <label for="test-name" class="form__label">Имя</label>
-                                <input type="text" id="test-name" name="name">
-                            </div>
-                        </div>
-                        <div class="form_row">
-                            <div class="form__cell">
-                                <label for="test-lastname" class="form__label">Фамилия</label>
-                                <input type="text" id="test-lastname" name="lastName">
-                            </div>
-                        </div>
-                        <div class="form_row">
-                            <div class="form__cell">
-                                <label for="test-gender" class="form__label">Пол</label>
-                                <select name="gender" id="test-gender" style="margin-top: 10px; margin-bottom: 10px;">
-                                    <option value="male">Мужской</option>
-                                    <option value="female">Женский</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form_row">
-                            <div class="form__cell">
-                                <input type="checkbox" id="test-auto" name="isAuto">
-                                <label for="test-auto">есть автомобиль</label>
-                            </div>
-                        </div>
-                        <button class="button" id="test-btn">ОТПРАВИТЬ</button>
-                    </form>
                 </div>
             </section>
             <section class="contacts" id="contacts">
@@ -767,6 +746,7 @@
         </ul>
     </nav>
     <script src="./script/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="./script/accordeon.js"></script>
     <script src="./script/order-form.js"></script>
@@ -776,5 +756,6 @@
     <script src="./script/reviews.js"></script>
     <script src="./script/map.js"></script>
     <script src="./script/test.js"></script>
+    <script src="./script/formInputConstraints.js"></script>
 </body>
 </html>

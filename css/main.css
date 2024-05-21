@@ -1521,6 +1521,9 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.order-form__container--inactive {
+  display: none;
+}
 
 .order-form__title {
   margin-bottom: 3.5555555556rem;
@@ -1534,6 +1537,65 @@ img {
   .order-form__title {
     margin-bottom: 1.5555555556rem;
   }
+}
+
+.response {
+  display: none;
+  background-color: #333537;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.response--active {
+  display: block;
+}
+
+.response__container {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.response__container--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal {
+  width: 17.1666666667rem;
+  height: 9.7777777778rem;
+  margin: 0 auto;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+}
+
+.modal__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5555555556rem 0;
+  height: 100%;
+}
+
+.modal__button {
+  width: 8.8888888889rem;
 }
 
 .form {
