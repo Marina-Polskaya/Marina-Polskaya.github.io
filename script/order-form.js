@@ -21,30 +21,22 @@ formButton.addEventListener('click', function (event) {
 
 
         xhr.addEventListener('load', function() {
-            const section = document.querySelector('#section-order-form');
-            const orderContainer = document.querySelector('#order-form-container'); 
-            const responseContainer = document.querySelector('#response-container');
+            const response = document.querySelector('#response'); 
             const modalBtn = document.querySelector('#modal-btn');
+            const modalContent = document.querySelector('#modal-content');
             
-            section.classList.remove('order-form');
-            orderContainer.classList.add('order-form__container--inactive');
-            section.classList.add('response');
-            responseContainer.classList.add('response__container--active');
-            section.classList.add('response--active');
+            response.classList.add('response--active');
 
             if (xhr.status >= 400) {
-                const modalContent = document.querySelector('#modal-content');
                 modalContent.textContent = 'Попробуйте позже';
-                console.log(xhr.statusText);
+            } else {
+                orderForm.reset();
             }
 
             modalBtn.addEventListener('click', (e) => {
                 e.preventDefault();
-                section.classList.remove('response--active');
-                section.classList.remove('response');
-                responseContainer.classList.remove('response__container--active');
-                orderContainer.classList.remove('order-form__container--inactive');
-                section.classList.add('order-form');
+                response.classList.remove('response--active');
+                modalContent.textContent = 'Сообщение отправлено';
             });
         });
     }
