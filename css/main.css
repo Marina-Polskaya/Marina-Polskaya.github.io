@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;200;300;400;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap");
 html {
+  height: 100%;
   font-size: 18px;
 }
 @media screen and (max-width: 768px) {
@@ -29,8 +30,12 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
+}
+
+.maincontent {
+  height: 100%;
 }
 
 .container {
@@ -425,7 +430,6 @@ img {
   height: 100vh;
   min-height: 36.2222222222rem;
 }
-
 .section__title {
   margin-bottom: 1.7222222222rem;
   font-size: 2.6666666667rem;

@@ -1,4 +1,5 @@
 const phone = document.querySelector('#phone');
+const name = document.querySelector('#name');
 
 phone.addEventListener('keydown', function(e) {
     let isDigit = false;
