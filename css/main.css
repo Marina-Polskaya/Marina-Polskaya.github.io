@@ -91,7 +91,7 @@ img {
 .hero {
   padding-top: 2.1%;
   padding-bottom: 5.4%;
-  height: 100vh;
+  height: 100%;
   min-height: 36.2222222222rem;
   background: url("./../../images/hero/bg.png");
   background-repeat: no-repeat;
@@ -432,7 +432,7 @@ img {
           justify-content: center;
   padding-top: 5.7%;
   padding-bottom: 5.7%;
-  height: 100vh;
+  height: 100%;
   min-height: 36.2222222222rem;
 }
 .section__title {
