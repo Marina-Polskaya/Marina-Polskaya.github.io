@@ -59,7 +59,7 @@ if (isMobile) {
             if (direction === 'up') {
                 scrollDirection = 'next';
             } else if (direction === 'down') {
-                scrollDirection === 'prev';
+                scrollDirection = 'prev';
             }
     
             scroller[scrollDirection]();
