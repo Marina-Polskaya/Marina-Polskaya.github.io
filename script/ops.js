@@ -1,10 +1,15 @@
 const display = $('#display');
 const sections = $('section');
 sections.first().addClass('section--active');
+
 const points = $('.fixed-menu__point');
 points.first().addClass('fixed-menu__point--active');
 const pointsLinks = $('.fixed-menu__link');
+
 let inScroll = false;
+
+const mobileDetect = new MobileDetect(window.navigator.userAgent);
+const isMobile = mobileDetect.mobile();
 
 $(window).on('wheel', (event)=> {
     const deltaY = event.originalEvent.deltaY;   
@@ -12,17 +17,16 @@ $(window).on('wheel', (event)=> {
     if (deltaY > 0) {
         scrollViewport().next();
     } else if (deltaY < 0) {
-        scrollViewport().previous();
+        scrollViewport().prev();
     }
 });
 
 $(window).on('keydown', (e) => {
-
     const currentTag = e.target.tagName.toLowerCase();
     if (currentTag !== 'textarea' && currentTag !== 'input') {
         switch (e.keyCode) {
             case 38:
-                scrollViewport().previous();
+                scrollViewport().prev();
                 break;
             case 40:
                 scrollViewport().next();
@@ -41,6 +45,27 @@ $('[data-scroll-to]').on('click', e => {
     const sectionId = reqSection.index();
     renderBySectionNumber(sectionId);
 });
+
+$('.wrapper').on('touchmove', e => {
+    e.preventDefault();
+});
+
+if (isMobile) {
+    $(body).swipe({
+        swipe: function(event, direction) {
+            const scroller = scrollViewport();
+            let scrollDirection = '';
+    
+            if (direction === 'up') {
+                scrollDirection = 'next';
+            } else if (direction === 'down') {
+                scrollDirection === 'prev';
+            }
+    
+            scroller[scrollDirection]();
+        }
+    });
+}
 
 const renderBySectionNumber = (number) => {
 
@@ -65,7 +90,7 @@ const scrollViewport = () => {
     const nextSection = activeSection.next();
 
     return {
-        previous() {
+        prev() {
             if (prevSection.length) {
                 renderBySectionNumber(prevSection.index());
             }
@@ -76,12 +101,6 @@ const scrollViewport = () => {
             }
         }
     }
-
-    // if (direction === 'prev' && prevSection.length) {
-    //     renderBySectionNumber(prevSection.index());
-    // } else if (direction === 'next' && nextSection.length) {
-    //     renderBySectionNumber(nextSection.index());
-    // }
 };
 
 const scrollStopper = () => {
