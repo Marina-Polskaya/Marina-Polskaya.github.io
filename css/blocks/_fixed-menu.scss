@@ -10,6 +10,10 @@
     @include phones {
         display: none;
     }
+
+    &-shadow {
+        color: black;
+    }
 }
 
 .fixed-menu__list {
@@ -24,6 +28,10 @@
     &--active {
         .fixed-menu__link {
             border-color: #fff;
+
+            &-shadow {
+                border-color: #000;
+            }
         }
     }
 
@@ -50,5 +58,11 @@
         height: rem(6px);
         border-radius: 50%;
         background: #fff;
+    }
+
+    &-shadow {
+        &:before {
+            background: #000;
+        }
     }
 }

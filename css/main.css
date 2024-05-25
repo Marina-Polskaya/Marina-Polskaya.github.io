@@ -36,6 +36,11 @@ body {
 
 .maincontent {
   height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  will-change: transform;
 }
 
 .container {
@@ -2058,6 +2063,9 @@ img {
     display: none;
   }
 }
+.fixed-menu-shadow {
+  color: black;
+}
 
 .fixed-menu__list li {
   list-style-type: none;
@@ -2068,6 +2076,9 @@ img {
 }
 .fixed-menu__point--active .fixed-menu__link {
   border-color: #fff;
+}
+.fixed-menu__point--active .fixed-menu__link-shadow {
+  border-color: #000;
 }
 .fixed-menu__point:last-child {
   margin-bottom: 0;
@@ -2091,6 +2102,9 @@ img {
   height: 0.3333333333rem;
   border-radius: 50%;
   background: #fff;
+}
+.fixed-menu__link-shadow:before {
+  background: #000;
 }
 
 .fullscreen-menu {
