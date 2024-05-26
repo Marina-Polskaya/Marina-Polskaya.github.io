@@ -28,6 +28,10 @@
     height: rem(4px);
     background-color: #fff;
     border-radius: rem(2px);
+
+    &-shadow {
+        background-color: #000;
+    }
 }
 
 .burger--active {
