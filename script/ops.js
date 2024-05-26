@@ -117,6 +117,8 @@ const scrollViewport = () => {
         prev() {
             if (prevSection.length) {
                 shiftBySectionName(prevSection.index());
+            } else {
+                document.location.reload();
             }
         },
         next() {
