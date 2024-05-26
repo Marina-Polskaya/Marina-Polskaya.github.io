@@ -2037,6 +2037,9 @@ img {
   background-color: #000;
 }
 
+.burger--active .burger__line {
+  background-color: #fff;
+}
 .burger--active .burger__line:nth-child(1) {
   opacity: 0;
 }
