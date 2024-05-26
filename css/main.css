@@ -1510,7 +1510,6 @@ img {
 .order-form {
   color: #fff;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(43, 43, 43, 0.6))), url("./../../../images/order-form/cd318b28c9ca7b595ef1ba2ba8ffdac9.png") 50%/cover no-repeat;
-  background: linear-gradient(rgba(43, 43, 43, 0.6)), url("./../../../images/order-form/cd318b28c9ca7b595ef1ba2ba8ffdac9.png") 50%/cover no-repeat;
   padding-top: 3%;
 }
 @media screen and (max-width: 768px) {
@@ -1554,9 +1553,9 @@ img {
   background: rgba(51, 53, 55, 0.8);
   position: fixed;
   left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
+  top: 500%;
+  width: 100%;
+  height: 100%;
   z-index: 10;
 }
 .response--active {
@@ -1855,15 +1854,19 @@ img {
   }
 }
 
+.contacts {
+  height: 100%;
+}
+
 .map {
   position: relative;
   width: 100vw;
-  min-height: 100vh;
+  height: 100%;
 }
 
 .map__container {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 
 .footer {
@@ -2029,6 +2032,9 @@ img {
   height: 0.2222222222rem;
   background-color: #fff;
   border-radius: 0.1111111111rem;
+}
+.burger__line-shadow {
+  background-color: #000;
 }
 
 .burger--active .burger__line:nth-child(1) {

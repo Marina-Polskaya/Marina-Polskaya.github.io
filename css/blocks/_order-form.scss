@@ -1,6 +1,7 @@
 .order-form {
     color: #fff;
-    background: linear-gradient(rgba(43, 43, 43, 0.6)), url('./../../../images/order-form/cd318b28c9ca7b595ef1ba2ba8ffdac9.png') 50% / cover no-repeat;
+    // background: linear-gradient(rgba(43, 43, 43, 0.6)), url('./../../../images/order-form/cd318b28c9ca7b595ef1ba2ba8ffdac9.png') 50% / cover no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(43, 43, 43, 0.6))), url('./../../../images/order-form/cd318b28c9ca7b595ef1ba2ba8ffdac9.png') 50% / cover no-repeat;
     padding-top: 3%;
 
     @include tablets {
