@@ -66,15 +66,6 @@ $('.wrapper').on('touchmove', e => {
 if (isMobile) {
     $(body).swipe({
         swipe: function(event, direction) {
-<<<<<<< HEAD
-            const scroller = scrollViewport();
-            let scrollDirection = '';
-    
-            if (direction === 'up') {
-                scrollDirection = 'next';
-            } else if (direction === 'down') {
-                scrollDirection = 'prev';
-=======
 
             if (!isModalActive()) {
                 const scroller = scrollViewport();
@@ -95,7 +86,6 @@ if (isMobile) {
                 }
 
                 scroller[scrollDirection]();
->>>>>>> development
             }
         }
     });
